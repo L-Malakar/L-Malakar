@@ -1,5 +1,5 @@
 # 💫 About Me:
-<img data-importer="image" align="right" height="200" src="https://github.com/L-Malakar/L-Malakar/blob/main/images/dev.gif"  />
+<img data-importer="image" align="right" height="200" src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/refs/heads/main/images/dev.gif"  />
 🔭 I’m currently working on Game and Web Development. <br>👯 I’m looking to collaborate on Websites and Biasness.<br>🤝 I’m looking for help with Programing.<br>🌱 I’m currently learning deferent computer languages and AI tool.<br>💬 Ask me about my work demos. <br>⚡ Fun fact I am a free minded developer so I want to lean and develop everything I could.
 <div data-importer="socials" align="left">
   <a href="https://x.com/MalakarL53174" target="_blank" rel="noopener noreferrer">
