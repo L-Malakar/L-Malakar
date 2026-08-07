@@ -1,11 +1,16 @@
 # 💫 About Me:
+<img data-importer="image" align="right" height="200" src="https://github.com/L-Malakar/L-Malakar/blob/main/images/dev.gif"  />
 🔭 I’m currently working on Game and Web Development. <br>👯 I’m looking to collaborate on Websites and Biasness.<br>🤝 I’m looking for help with Programing.<br>🌱 I’m currently learning deferent computer languages and AI tool.<br>💬 Ask me about my work demos. <br>⚡ Fun fact I am a free minded developer so I want to lean and develop everything I could.
+<div data-importer="socials" align="left">
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" height="40" alt="discord logo"  />
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="52" height="40" alt="youtube logo"  />
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
+</div>
 
 ![pacman contribution graph](https://raw.githubusercontent.com/L-Malakar/L-Malakar/pacman-output/breakout-contribution-graph-dark.svg#gh-dark-mode-only)
 ![pacman contribution graph](https://raw.githubusercontent.com/L-Malakar/L-Malakar/pacman-output/breakout-contribution-graph.svg#gh-light-mode-only)
-
-## 🌐 Socials:
-[![devxmalakar](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/devxmalakar/) [![L. Malakar](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/MalakarL53174) [![GdMalakar](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@gdmalakar) 
 
 # 💻 Tech Stack:
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Rust](https://img.shields.io/badge/rust-%20%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
