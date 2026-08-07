@@ -1,6 +1,11 @@
 # 💫 About Me:
 🔭 I’m currently working on Game and Web Development. <br>👯 I’m looking to collaborate on Websites and Biasness.<br>🤝 I’m looking for help with Programing.<br>🌱 I’m currently learning deferent computer languages and AI tool.<br>💬 Ask me about my work demos. <br>⚡ Fun fact I am a free minded developer so I want to lean and develop everything I could.
 
+<picture data-importer="pacman">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/maurodesouza/maurodesouza/pacman-output/breakout-contribution-graph-dark.svg?game=breakout">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/maurodesouza/maurodesouza/pacman-output/breakout-contribution-graph.svg?game=breakout">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/pacman-output/breakout-contribution-graph.svg?game=breakout">
+</picture>
 
 ## 🌐 Socials:
 [![devxmalakar](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/devxmalakar/) [![L. Malakar](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/MalakarL53174) [![GdMalakar](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@gdmalakar) 
