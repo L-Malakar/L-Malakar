@@ -32,45 +32,64 @@
 <br>
 
 # 💻 Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Rust](https://img.shields.io/badge/rust-%20%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+[![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
+[![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
+[![Rust](https://img.shields.io/badge/rust-%20%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
+[![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
+[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
+[![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack)
 
 <div data-importer="techs" align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="40" alt="android logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="40" alt="android logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" height="40" alt="firefox logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" height="40" alt="firefox logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" height="40" alt="godot logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" height="40" alt="godot logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo" /></a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" height="40" alt="windows8 logo"  />
+  <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-tech-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" height="40" alt="windows8 logo" /></a>
 </div>
 
 # 💻 My Status: 
 <br clear="both">
 
 <div data-importer="stats" align="center">
-  <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
-  <img src="https://streak-stats.demolab.com?user=L-Malakar&locale=en&mode=weekly&theme=merko&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" />
-  <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&hide_border=false&order=2" height="150" alt="languages graph" />
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+    <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+      <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-my-status">
+        <img src="https://streak-stats.demolab.com?user=L-Malakar&locale=en&mode=weekly&theme=merko&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" />
+      </a>
+      <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-my-status">
+        <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&hide_border=false&order=2" height="150" alt="languages graph" />
+      </a>
+    </div>
+    <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-my-status">
+      <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/activity-graph-output/activity-graph.svg?radius=16&theme=chartreuse-dark&area=true&order=5" height="300" alt="activity-graph graph" />
+    </a>
+  </div>
 </div>
-  <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/activity-graph-output/activity-graph.svg?radius=16&theme=chartreuse-dark&area=true&order=5" height="300" alt="activity-graph graph" />
-</div>
+
+<div align="center">
 
 # 🕹️ Try my games
 
-### <a href="https://l-malakar.github.io/LLOF/"><img src="https://l-malakar.github.io/LLOF/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/LLOF/) <a href="https://l-malakar.github.io/HAND-NINJA/"><img src="https://l-malakar.github.io/HAND-NINJA/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/HAND-NINJA/)
+### <a href="https://l-malakar.github.io/LLOF/"><img src="https://l-malakar.github.io/LLOF/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/LLOF/) &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://l-malakar.github.io/HAND-NINJA/"><img src="https://l-malakar.github.io/HAND-NINJA/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/HAND-NINJA/)
+
+</div>
