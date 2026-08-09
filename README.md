@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/banner-output/loading-banner.svg" width="100%" />
 </a>
 
-<img data-importer="image" align="right" height="200" src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/refs/heads/main/images/dev.gif" />
+<img data-importer="image" align="right" height="200" src="https://github.com/L-Malakar/L-Malakar/blob/main/images/walking_char.gif?raw=true" />
 
 🔭 Currently building **games and web apps** — check out the playable demos below. <br>
 👯 Open to collaborating on **websites and business/product tools**. <br>
