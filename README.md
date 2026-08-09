@@ -90,6 +90,21 @@
 
 # 🕹️ Try my games
 
-### <a href="https://l-malakar.github.io/LLOF/"><img src="https://l-malakar.github.io/LLOF/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/LLOF/) &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://l-malakar.github.io/HAND-NINJA/"><img src="https://l-malakar.github.io/HAND-NINJA/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/HAND-NINJA/)
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://l-malakar.github.io/LLOF/">
+        <img src="https://l-malakar.github.io/LLOF/asset/logo.svg" width="120" height="120"><br><br>
+        <img src="https://img.shields.io/badge/▶_Play_Now-4CAF50?style=for-the-badge&logoColor=white" alt="Play LLOF" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://l-malakar.github.io/HAND-NINJA/">
+        <img src="https://l-malakar.github.io/HAND-NINJA/asset/logo.svg" width="120" height="120"><br><br>
+        <img src="https://img.shields.io/badge/▶_Play_Now-4CAF50?style=for-the-badge&logoColor=white" alt="Play Hand Ninja" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 </div>
