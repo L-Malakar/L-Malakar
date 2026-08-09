@@ -1,0 +1,80 @@
+<svg width="100%" height="150" viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #0d1117; }
+      .frame { fill: none; stroke: #30363d; stroke-width: 2; }
+      .title {
+        font-family: 'Segoe UI', 'Courier New', monospace;
+        font-size: 27px;
+        fill: #e6edf3;
+        font-weight: bold;
+      }
+      .accent { fill: #39d353; }
+      .sub {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #8b949e;
+      }
+      .cursor {
+        fill: #39d353;
+        animation: blink 1s steps(2, start) infinite;
+      }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      .bar-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+      .bar-fill {
+        fill: #39d353;
+        animation: load 2.6s ease-in-out infinite;
+      }
+      @keyframes load {
+        0%   { width: 0px; }
+        45%  { width: 480px; }
+        55%  { width: 480px; }
+        100% { width: 0px; }
+      }
+      .block { fill: #58a6ff; animation: pulse 1.2s ease-in-out infinite; }
+      .block:nth-child(2) { animation-delay: 0.15s; }
+      .block:nth-child(3) { animation-delay: 0.3s; }
+      .block:nth-child(4) { animation-delay: 0.45s; }
+      .block:nth-child(5) { animation-delay: 0.6s; }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.25; }
+        50% { opacity: 1; }
+      }
+      .avatar-ring {
+        fill: none;
+        stroke: url(#avatarGrad);
+        stroke-width: 3;
+        animation: spin 3s linear infinite;
+        transform-origin: 60px 75px;
+      }
+      @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="150" rx="10"/>
+  <rect class="frame" x="1" y="1" width="898" height="148" rx="10"/>
+
+  <circle cx="60" cy="75" r="34" fill="url(#avatarGrad)" opacity="0.85"/>
+  <circle class="avatar-ring" cx="60" cy="75" r="38" stroke-dasharray="180 60"/>
+
+  <text x="120" y="55" class="title">L. Malakar<tspan class="accent">.</tspan><tspan class="cursor">_</tspan></text>
+  <text x="120" y="78" class="sub">building games &amp; web apps · open to collab</text>
+
+  <rect class="bar-bg" x="120" y="98" width="480" height="14" rx="3"/>
+  <rect class="bar-fill" x="120" y="98" height="14" rx="3"/>
+
+  <g transform="translate(630,98)">
+    <rect class="block" x="0"  y="0" width="12" height="14" rx="2"/>
+    <rect class="block" x="18" y="0" width="12" height="14" rx="2"/>
+    <rect class="block" x="36" y="0" width="12" height="14" rx="2"/>
+    <rect class="block" x="54" y="0" width="12" height="14" rx="2"/>
+    <rect class="block" x="72" y="0" width="12" height="14" rx="2"/>
+  </g>
+
+  <text x="120" y="128" class="sub">562 contributions · LLOF &amp; Hand Ninja live now</text>
+</svg>
