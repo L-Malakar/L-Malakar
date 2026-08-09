@@ -21,18 +21,40 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v4
 
+      - name: sanity check template exists
+        run: |
+          echo "Repo contents at root:"
+          ls -la
+          if [ ! -f "banner-template.svg" ]; then
+            echo "::error::banner-template.svg not found at repo root. Make sure it's committed alongside the workflow."
+            exit 1
+          fi
+
       - name: fetch avatar and build banner.svg
         env:
           GH_USER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -x
           mkdir -p dist
 
-          # 1. Get the current avatar URL from the GitHub API
-          AVATAR_URL=$(curl -s "https://api.github.com/users/${GH_USER}" | grep '"avatar_url"' | sed -E 's/.*"avatar_url": "([^"]+)".*/\1/')
+          # 1. Get the current avatar URL from the GitHub API (authenticated to avoid rate limits)
+          API_RESPONSE=$(curl -s -H "Authorization: token ${GH_TOKEN}" "https://api.github.com/users/${GH_USER}")
+          AVATAR_URL=$(echo "$API_RESPONSE" | grep -o '"avatar_url": *"[^"]*"' | head -n1 | sed -E 's/.*"([^"]+)"$/\1/')
+
+          if [ -z "$AVATAR_URL" ]; then
+            echo "::error::Could not extract avatar_url from API response:"
+            echo "$API_RESPONSE"
+            exit 1
+          fi
           echo "Avatar URL: $AVATAR_URL"
 
           # 2. Download the avatar and base64-encode it so it's baked into the SVG
           curl -sL "$AVATAR_URL" -o dist/avatar.png
+          if [ ! -s dist/avatar.png ]; then
+            echo "::error::Avatar download failed or file is empty."
+            exit 1
+          fi
           AVATAR_B64=$(base64 -w 0 dist/avatar.png)
 
           # 3. Inject the base64 avatar into the SVG template
