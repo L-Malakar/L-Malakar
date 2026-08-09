@@ -1,6 +1,8 @@
-# 💫 About Me: ( [<img src="https://yt3.googleusercontent.com/Khmav_bBMzqoVJE8ubBONlKjNkwFLI07w7RfosBBB4jD9R6eQjJoZO-nnRAwfPbnNFRc_Zjx=s160-c-k-c0x00ffffff-no-rj" width="30" valign="middle"/> L. Malakar](https://github.com/L-Malakar/) )
+# 🔎 About Me: ( [<img src="https://yt3.googleusercontent.com/Khmav_bBMzqoVJE8ubBONlKjNkwFLI07w7RfosBBB4jD9R6eQjJoZO-nnRAwfPbnNFRc_Zjx=s160-c-k-c0x00ffffff-no-rj" width="30" valign="middle"/> L. Malakar](https://github.com/L-Malakar/) )
 <img data-importer="image" align="right" height="200" src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/refs/heads/main/images/dev.gif"  />
 🔭 I’m currently working on Game and Web Development. <br>👯 I’m looking to collaborate on Websites and Biasness.<br>🤝 I’m looking for help with Programing.<br>🌱 I’m currently learning deferent computer languages and AI tool.<br>💬 Ask me about my work demos. <br>⚡ Fun fact I am a free minded developer so I want to lean and develop everything I could.
+
+# 💻 social:
 <div data-importer="socials" align="left">
   <a href="https://x.com/MalakarL53174" target="_blank" rel="noopener noreferrer">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo" />
@@ -69,9 +71,6 @@
   <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/activity-graph-output/activity-graph.svg?radius=16&theme=chartreuse-dark&area=true&order=5" height="300" alt="activity-graph graph" />
 </div>
 
----
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-## [Try my games](https://github.com/L-Malakar/L-Malakar/edit/main/README.md#play-now)
+# 🕹️ Try my games
 
 ### <a href="https://l-malakar.github.io/LLOF/"><img src="https://l-malakar.github.io/LLOF/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/LLOF/) <a href="https://l-malakar.github.io/HAND-NINJA/"><img src="https://l-malakar.github.io/HAND-NINJA/asset/logo.svg" width="120" height="120" valign="middle"></a> [▶ Play Now](https://l-malakar.github.io/HAND-NINJA/)
