@@ -73,14 +73,14 @@
 <div data-importer="stats" align="center">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
     <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
-      <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-my-status">
+      <a href="https://github.com/L-Malakar#-my-status">
         <img src="https://streak-stats.demolab.com?user=L-Malakar&locale=en&mode=weekly&theme=merko&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" />
       </a>
-      <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-my-status">
+      <a href="https://github.com/L-Malakar#-my-status">
         <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&hide_border=false&order=2" height="150" alt="languages graph" />
       </a>
     </div>
-    <a href="https://github.com/L-Malakar/L-Malakar/edit/main/README.md#-my-status">
+    <a href="https://github.com/L-Malakar#-my-status">
       <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/activity-graph-output/activity-graph.svg?radius=16&theme=chartreuse-dark&area=true&order=5" height="300" alt="activity-graph graph" />
     </a>
   </div>
