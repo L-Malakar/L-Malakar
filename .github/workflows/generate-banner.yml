@@ -28,19 +28,22 @@ jobs:
             exit 1
           fi
 
-      - name: fetch profile data (name, avatar, contributions, top repos)
+      - name: fetch profile data and build banner
         env:
           GH_USER: ${{ github.repository_owner }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -x
           mkdir -p dist
-
-          # 1. GraphQL query: display name, total contributions (last year),
-          #    and repos ranked by commit contributions
-          QUERY=$(python3 -c '
+          python3 - << 'PYEOF'
 import json
-q = """
+import os
+import base64
+import urllib.request
+
+user = os.environ["GH_USER"]
+token = os.environ["GH_TOKEN"]
+
+query = """
 query($login: String!) {
   user(login: $login) {
     name
@@ -58,87 +61,62 @@ query($login: String!) {
   }
 }
 """
-print(json.dumps({"query": q, "variables": {"login": "'"${GH_USER}"'"}}))
-')
 
-          RESPONSE=$(curl -s -H "Authorization: bearer ${GH_TOKEN}" \
-            -H "Content-Type: application/json" \
-            -d "$QUERY" \
-            https://api.github.com/graphql)
+req = urllib.request.Request(
+    "https://api.github.com/graphql",
+    data=json.dumps({"query": query, "variables": {"login": user}}).encode(),
+    headers={
+        "Authorization": f"bearer {token}",
+        "Content-Type": "application/json",
+    },
+)
 
-          echo "$RESPONSE" > dist/graphql_response.json
-
-          # 2. Parse the response with python (far more reliable than grep/sed for JSON)
-          python3 << 'PYEOF'
-import json
-
-with open("dist/graphql_response.json") as f:
-    data = json.load(f)
+with urllib.request.urlopen(req) as resp:
+    data = json.load(resp)
 
 if "errors" in data:
     print("::error::GraphQL API returned errors:", data["errors"])
     raise SystemExit(1)
 
-user = data["data"]["user"]
-name = user["name"] or user["login"]
-avatar_url = user["avatarUrl"]
-
-cc = user["contributionsCollection"]
+u = data["data"]["user"]
+name = u["name"] or u["login"]
+avatar_url = u["avatarUrl"]
+cc = u["contributionsCollection"]
 total = cc["contributionCalendar"]["totalContributions"]
 
 repos = cc["commitContributionsByRepository"]
-# already ranked by GitHub; take top 2 by contribution count just to be safe
 repos_sorted = sorted(repos, key=lambda r: r["contributions"]["totalCount"], reverse=True)
-top_repo_names = [r["repository"]["name"] for r in repos_sorted[:2]]
+top_names = [r["repository"]["name"] for r in repos_sorted[:2]]
 
-if len(top_repo_names) >= 2:
-    top_line = f"{top_repo_names[0]}, {top_repo_names[1]} and more..."
-elif len(top_repo_names) == 1:
-    top_line = f"{top_repo_names[0]} and more..."
+if len(top_names) >= 2:
+    top_line = f"{top_names[0]}, {top_names[1]} and more..."
+elif len(top_names) == 1:
+    top_line = f"{top_names[0]} and more..."
 else:
     top_line = "no contributions yet"
 
-with open("dist/vars.env", "w") as out:
-    out.write(f"NAME={name}\n")
-    out.write(f"AVATAR_URL={avatar_url}\n")
-    out.write(f"TOTAL={total}\n")
-    out.write(f"TOP_LINE={top_line}\n")
+print(f"Resolved -> name={name!r} total={total} top_line={top_line!r}")
 
-print("Resolved:", name, total, top_line)
-PYEOF
+with urllib.request.urlopen(avatar_url) as img_resp:
+    avatar_bytes = img_resp.read()
+avatar_b64 = base64.b64encode(avatar_bytes).decode()
 
-          # 3. Load the resolved values into the shell environment
-          source dist/vars.env
+def xml_escape(s):
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-          # 4. Download avatar, base64 encode
-          curl -sL "$AVATAR_URL" -o dist/avatar.png
-          if [ ! -s dist/avatar.png ]; then
-            echo "::error::Avatar download failed or file is empty."
-            exit 1
-          fi
-          AVATAR_B64=$(base64 -w 0 dist/avatar.png)
-
-          # 5. Inject everything into the SVG template
-          #    (escape & for XML safety in the top-repo line and name)
-          NAME_ESC=$(echo "$NAME" | sed 's/&/\&amp;/g')
-          TOP_LINE_ESC=$(echo "$TOP_LINE" | sed 's/&/\&amp;/g')
-
-          python3 << PYEOF2
-import re
-
-with open("images/banner-template.svg") as f:
+with open("images/banner-template.svg", encoding="utf-8") as f:
     svg = f.read()
 
-svg = svg.replace("__AVATAR_BASE64__", """${AVATAR_B64}""")
-svg = svg.replace("__NAME__", """${NAME_ESC}""")
-svg = svg.replace("__TOTAL_CONTRIBUTIONS__", """${TOTAL}""")
-svg = svg.replace("__TOP_REPOS_LINE__", """${TOP_LINE_ESC}""")
+svg = svg.replace("__AVATAR_BASE64__", avatar_b64)
+svg = svg.replace("__NAME__", xml_escape(name))
+svg = svg.replace("__TOTAL_CONTRIBUTIONS__", str(total))
+svg = svg.replace("__TOP_REPOS_LINE__", xml_escape(top_line))
 
-with open("dist/loading-banner.svg", "w") as f:
+with open("dist/loading-banner.svg", "w", encoding="utf-8") as f:
     f.write(svg)
-PYEOF2
 
-          rm dist/avatar.png dist/graphql_response.json dist/vars.env
+print("Wrote dist/loading-banner.svg")
+PYEOF
 
       - name: push loading-banner.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
