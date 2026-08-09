@@ -1,5 +1,6 @@
-<!-- wrong — this is the raw unfilled template -->
-<img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/main/images/banner-template.svg" />
+<a href="https://github.com/L-Malakar">
+  <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/banner-output/loading-banner.svg" width="100%" />
+</a>
 
 <img data-importer="image" align="right" height="200" src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/refs/heads/main/images/dev.gif" />
 
