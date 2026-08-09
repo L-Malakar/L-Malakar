@@ -1,0 +1,49 @@
+name: Generate profile banner
+
+on:
+  schedule: # every 12 hours
+    - cron: "0 */12 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: fetch avatar and build banner.svg
+        env:
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          mkdir -p dist
+
+          # 1. Get the current avatar URL from the GitHub API
+          AVATAR_URL=$(curl -s "https://api.github.com/users/${GH_USER}" | grep '"avatar_url"' | sed -E 's/.*"avatar_url": "([^"]+)".*/\1/')
+          echo "Avatar URL: $AVATAR_URL"
+
+          # 2. Download the avatar and base64-encode it so it's baked into the SVG
+          curl -sL "$AVATAR_URL" -o dist/avatar.png
+          AVATAR_B64=$(base64 -w 0 dist/avatar.png)
+
+          # 3. Inject the base64 avatar into the SVG template
+          sed "s|__AVATAR_BASE64__|${AVATAR_B64}|" banner-template.svg > dist/loading-banner.svg
+
+          rm dist/avatar.png
+
+      - name: push loading-banner.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: banner-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
