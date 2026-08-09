@@ -25,8 +25,8 @@ jobs:
         run: |
           echo "Repo contents at root:"
           ls -la
-          if [ ! -f "banner-template.svg" ]; then
-            echo "::error::banner-template.svg not found at repo root. Make sure it's committed alongside the workflow."
+          if [ ! -f "images/banner-template.svg" ]; then
+            echo "::error::images/banner-template.svg not found. Make sure it's committed in the images/ folder."
             exit 1
           fi
 
@@ -58,7 +58,7 @@ jobs:
           AVATAR_B64=$(base64 -w 0 dist/avatar.png)
 
           # 3. Inject the base64 avatar into the SVG template
-          sed "s|__AVATAR_BASE64__|${AVATAR_B64}|" banner-template.svg > dist/loading-banner.svg
+          sed "s|__AVATAR_BASE64__|${AVATAR_B64}|" images/banner-template.svg > dist/loading-banner.svg
 
           rm dist/avatar.png
 
