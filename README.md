@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/main/images/loading-banner.svg" width="100%" />
+
 # 🔎 About Me: ( [<img src="https://yt3.googleusercontent.com/Khmav_bBMzqoVJE8ubBONlKjNkwFLI07w7RfosBBB4jD9R6eQjJoZO-nnRAwfPbnNFRc_Zjx=s160-c-k-c0x00ffffff-no-rj" width="30" valign="middle"/> L. Malakar](https://github.com/L-Malakar/) )
 <img data-importer="image" align="right" height="200" src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/refs/heads/main/images/dev.gif" />
 
