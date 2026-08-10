@@ -1083,5 +1083,5 @@
     <text class="pct pct-100" text-anchor="middle">100%</text>
   </g>
 
-  <text x="120" y="128" class="sub">__TOTAL_CONTRIBUTIONS__ contributions · __TOP_REPOS_LINE__</text>
+  __CONTRIB_COUNTER_GROUP__
 </svg>

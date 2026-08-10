@@ -74,8 +74,14 @@ with open("images/banner-template.svg", encoding="utf-8") as f:
 
 svg = svg.replace("__AVATAR_BASE64__", avatar_b64)
 svg = svg.replace("__NAME__", xml_escape(name))
-svg = svg.replace("__TOTAL_CONTRIBUTIONS__", str(total))
-svg = svg.replace("__TOP_REPOS_LINE__", xml_escape(top_line))
+counter_lines = []
+for v in range(0, 101):
+    count = round(total * v / 100)
+    counter_lines.append(
+        f'  <text x="120" y="128" class="sub pct-{v}">{count} contributions &#183; {xml_escape(top_line)}</text>'
+    )
+counter_group = "\n".join(counter_lines)
+svg = svg.replace("__CONTRIB_COUNTER_GROUP__", counter_group)
 
 with open("dist/loading-banner.svg", "w", encoding="utf-8") as f:
     f.write(svg)
