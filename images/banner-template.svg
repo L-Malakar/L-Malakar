@@ -26,19 +26,931 @@
       @keyframes blink { 50% { opacity: 0; } }
 
       .bar-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; }
-      .bar-fill { fill: #39d353; animation: load 2.6s ease-in-out infinite; }
+      .bar-fill { fill: #39d353; animation: load 4.5s ease-in-out infinite; }
       @keyframes load {
-        0%   { width: 0px; }
-        45%  { width: 480px; }
-        55%  { width: 480px; }
-        100% { width: 0px; }
+        0%    { width: 0px; }
+        30%   { width: 240px; }
+        38%   { width: 240px; }
+        45%   { width: 432px; }
+        85%   { width: 475.2px; }
+        95%   { width: 475.2px; }
+        97%   { width: 480px; }
+        100%  { width: 480px; }
       }
-      .block { fill: #58a6ff; animation: pulse 1.2s ease-in-out infinite; }
-      .block:nth-child(2) { animation-delay: 0.15s; }
-      .block:nth-child(3) { animation-delay: 0.3s; }
-      .block:nth-child(4) { animation-delay: 0.45s; }
-      .block:nth-child(5) { animation-delay: 0.6s; }
-      @keyframes pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+
+      /* Percentage counter — every integer 0-100, stepped in sync with the bar */
+      .pct {
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        fill: #58a6ff;
+        opacity: 0;
+      }
+      .pct-0 { animation: pct0 4.5s ease-in-out infinite; }
+      @keyframes pct0 {
+        0% { opacity: 1; }
+        0.57% { opacity: 1; }
+        0.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-1 { animation: pct1 4.5s ease-in-out infinite; }
+      @keyframes pct1 {
+        0% { opacity: 0; }
+        0.57% { opacity: 0; }
+        0.6% { opacity: 1; }
+        1.17% { opacity: 1; }
+        1.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-2 { animation: pct2 4.5s ease-in-out infinite; }
+      @keyframes pct2 {
+        0% { opacity: 0; }
+        1.17% { opacity: 0; }
+        1.2% { opacity: 1; }
+        1.77% { opacity: 1; }
+        1.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-3 { animation: pct3 4.5s ease-in-out infinite; }
+      @keyframes pct3 {
+        0% { opacity: 0; }
+        1.77% { opacity: 0; }
+        1.8% { opacity: 1; }
+        2.37% { opacity: 1; }
+        2.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-4 { animation: pct4 4.5s ease-in-out infinite; }
+      @keyframes pct4 {
+        0% { opacity: 0; }
+        2.37% { opacity: 0; }
+        2.4% { opacity: 1; }
+        2.97% { opacity: 1; }
+        3% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-5 { animation: pct5 4.5s ease-in-out infinite; }
+      @keyframes pct5 {
+        0% { opacity: 0; }
+        2.97% { opacity: 0; }
+        3% { opacity: 1; }
+        3.57% { opacity: 1; }
+        3.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-6 { animation: pct6 4.5s ease-in-out infinite; }
+      @keyframes pct6 {
+        0% { opacity: 0; }
+        3.57% { opacity: 0; }
+        3.6% { opacity: 1; }
+        4.17% { opacity: 1; }
+        4.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-7 { animation: pct7 4.5s ease-in-out infinite; }
+      @keyframes pct7 {
+        0% { opacity: 0; }
+        4.17% { opacity: 0; }
+        4.2% { opacity: 1; }
+        4.77% { opacity: 1; }
+        4.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-8 { animation: pct8 4.5s ease-in-out infinite; }
+      @keyframes pct8 {
+        0% { opacity: 0; }
+        4.77% { opacity: 0; }
+        4.8% { opacity: 1; }
+        5.37% { opacity: 1; }
+        5.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-9 { animation: pct9 4.5s ease-in-out infinite; }
+      @keyframes pct9 {
+        0% { opacity: 0; }
+        5.37% { opacity: 0; }
+        5.4% { opacity: 1; }
+        5.97% { opacity: 1; }
+        6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-10 { animation: pct10 4.5s ease-in-out infinite; }
+      @keyframes pct10 {
+        0% { opacity: 0; }
+        5.97% { opacity: 0; }
+        6% { opacity: 1; }
+        6.57% { opacity: 1; }
+        6.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-11 { animation: pct11 4.5s ease-in-out infinite; }
+      @keyframes pct11 {
+        0% { opacity: 0; }
+        6.57% { opacity: 0; }
+        6.6% { opacity: 1; }
+        7.17% { opacity: 1; }
+        7.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-12 { animation: pct12 4.5s ease-in-out infinite; }
+      @keyframes pct12 {
+        0% { opacity: 0; }
+        7.17% { opacity: 0; }
+        7.2% { opacity: 1; }
+        7.77% { opacity: 1; }
+        7.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-13 { animation: pct13 4.5s ease-in-out infinite; }
+      @keyframes pct13 {
+        0% { opacity: 0; }
+        7.77% { opacity: 0; }
+        7.8% { opacity: 1; }
+        8.37% { opacity: 1; }
+        8.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-14 { animation: pct14 4.5s ease-in-out infinite; }
+      @keyframes pct14 {
+        0% { opacity: 0; }
+        8.37% { opacity: 0; }
+        8.4% { opacity: 1; }
+        8.97% { opacity: 1; }
+        9% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-15 { animation: pct15 4.5s ease-in-out infinite; }
+      @keyframes pct15 {
+        0% { opacity: 0; }
+        8.97% { opacity: 0; }
+        9% { opacity: 1; }
+        9.57% { opacity: 1; }
+        9.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-16 { animation: pct16 4.5s ease-in-out infinite; }
+      @keyframes pct16 {
+        0% { opacity: 0; }
+        9.57% { opacity: 0; }
+        9.6% { opacity: 1; }
+        10.17% { opacity: 1; }
+        10.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-17 { animation: pct17 4.5s ease-in-out infinite; }
+      @keyframes pct17 {
+        0% { opacity: 0; }
+        10.17% { opacity: 0; }
+        10.2% { opacity: 1; }
+        10.77% { opacity: 1; }
+        10.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-18 { animation: pct18 4.5s ease-in-out infinite; }
+      @keyframes pct18 {
+        0% { opacity: 0; }
+        10.77% { opacity: 0; }
+        10.8% { opacity: 1; }
+        11.37% { opacity: 1; }
+        11.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-19 { animation: pct19 4.5s ease-in-out infinite; }
+      @keyframes pct19 {
+        0% { opacity: 0; }
+        11.37% { opacity: 0; }
+        11.4% { opacity: 1; }
+        11.97% { opacity: 1; }
+        12% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-20 { animation: pct20 4.5s ease-in-out infinite; }
+      @keyframes pct20 {
+        0% { opacity: 0; }
+        11.97% { opacity: 0; }
+        12% { opacity: 1; }
+        12.57% { opacity: 1; }
+        12.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-21 { animation: pct21 4.5s ease-in-out infinite; }
+      @keyframes pct21 {
+        0% { opacity: 0; }
+        12.57% { opacity: 0; }
+        12.6% { opacity: 1; }
+        13.17% { opacity: 1; }
+        13.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-22 { animation: pct22 4.5s ease-in-out infinite; }
+      @keyframes pct22 {
+        0% { opacity: 0; }
+        13.17% { opacity: 0; }
+        13.2% { opacity: 1; }
+        13.77% { opacity: 1; }
+        13.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-23 { animation: pct23 4.5s ease-in-out infinite; }
+      @keyframes pct23 {
+        0% { opacity: 0; }
+        13.77% { opacity: 0; }
+        13.8% { opacity: 1; }
+        14.37% { opacity: 1; }
+        14.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-24 { animation: pct24 4.5s ease-in-out infinite; }
+      @keyframes pct24 {
+        0% { opacity: 0; }
+        14.37% { opacity: 0; }
+        14.4% { opacity: 1; }
+        14.97% { opacity: 1; }
+        15% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-25 { animation: pct25 4.5s ease-in-out infinite; }
+      @keyframes pct25 {
+        0% { opacity: 0; }
+        14.97% { opacity: 0; }
+        15% { opacity: 1; }
+        15.57% { opacity: 1; }
+        15.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-26 { animation: pct26 4.5s ease-in-out infinite; }
+      @keyframes pct26 {
+        0% { opacity: 0; }
+        15.57% { opacity: 0; }
+        15.6% { opacity: 1; }
+        16.17% { opacity: 1; }
+        16.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-27 { animation: pct27 4.5s ease-in-out infinite; }
+      @keyframes pct27 {
+        0% { opacity: 0; }
+        16.17% { opacity: 0; }
+        16.2% { opacity: 1; }
+        16.77% { opacity: 1; }
+        16.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-28 { animation: pct28 4.5s ease-in-out infinite; }
+      @keyframes pct28 {
+        0% { opacity: 0; }
+        16.77% { opacity: 0; }
+        16.8% { opacity: 1; }
+        17.37% { opacity: 1; }
+        17.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-29 { animation: pct29 4.5s ease-in-out infinite; }
+      @keyframes pct29 {
+        0% { opacity: 0; }
+        17.37% { opacity: 0; }
+        17.4% { opacity: 1; }
+        17.97% { opacity: 1; }
+        18% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-30 { animation: pct30 4.5s ease-in-out infinite; }
+      @keyframes pct30 {
+        0% { opacity: 0; }
+        17.97% { opacity: 0; }
+        18% { opacity: 1; }
+        18.57% { opacity: 1; }
+        18.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-31 { animation: pct31 4.5s ease-in-out infinite; }
+      @keyframes pct31 {
+        0% { opacity: 0; }
+        18.57% { opacity: 0; }
+        18.6% { opacity: 1; }
+        19.17% { opacity: 1; }
+        19.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-32 { animation: pct32 4.5s ease-in-out infinite; }
+      @keyframes pct32 {
+        0% { opacity: 0; }
+        19.17% { opacity: 0; }
+        19.2% { opacity: 1; }
+        19.77% { opacity: 1; }
+        19.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-33 { animation: pct33 4.5s ease-in-out infinite; }
+      @keyframes pct33 {
+        0% { opacity: 0; }
+        19.77% { opacity: 0; }
+        19.8% { opacity: 1; }
+        20.37% { opacity: 1; }
+        20.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-34 { animation: pct34 4.5s ease-in-out infinite; }
+      @keyframes pct34 {
+        0% { opacity: 0; }
+        20.37% { opacity: 0; }
+        20.4% { opacity: 1; }
+        20.97% { opacity: 1; }
+        21% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-35 { animation: pct35 4.5s ease-in-out infinite; }
+      @keyframes pct35 {
+        0% { opacity: 0; }
+        20.97% { opacity: 0; }
+        21% { opacity: 1; }
+        21.57% { opacity: 1; }
+        21.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-36 { animation: pct36 4.5s ease-in-out infinite; }
+      @keyframes pct36 {
+        0% { opacity: 0; }
+        21.57% { opacity: 0; }
+        21.6% { opacity: 1; }
+        22.17% { opacity: 1; }
+        22.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-37 { animation: pct37 4.5s ease-in-out infinite; }
+      @keyframes pct37 {
+        0% { opacity: 0; }
+        22.17% { opacity: 0; }
+        22.2% { opacity: 1; }
+        22.77% { opacity: 1; }
+        22.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-38 { animation: pct38 4.5s ease-in-out infinite; }
+      @keyframes pct38 {
+        0% { opacity: 0; }
+        22.77% { opacity: 0; }
+        22.8% { opacity: 1; }
+        23.37% { opacity: 1; }
+        23.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-39 { animation: pct39 4.5s ease-in-out infinite; }
+      @keyframes pct39 {
+        0% { opacity: 0; }
+        23.37% { opacity: 0; }
+        23.4% { opacity: 1; }
+        23.97% { opacity: 1; }
+        24% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-40 { animation: pct40 4.5s ease-in-out infinite; }
+      @keyframes pct40 {
+        0% { opacity: 0; }
+        23.97% { opacity: 0; }
+        24% { opacity: 1; }
+        24.57% { opacity: 1; }
+        24.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-41 { animation: pct41 4.5s ease-in-out infinite; }
+      @keyframes pct41 {
+        0% { opacity: 0; }
+        24.57% { opacity: 0; }
+        24.6% { opacity: 1; }
+        25.17% { opacity: 1; }
+        25.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-42 { animation: pct42 4.5s ease-in-out infinite; }
+      @keyframes pct42 {
+        0% { opacity: 0; }
+        25.17% { opacity: 0; }
+        25.2% { opacity: 1; }
+        25.77% { opacity: 1; }
+        25.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-43 { animation: pct43 4.5s ease-in-out infinite; }
+      @keyframes pct43 {
+        0% { opacity: 0; }
+        25.77% { opacity: 0; }
+        25.8% { opacity: 1; }
+        26.37% { opacity: 1; }
+        26.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-44 { animation: pct44 4.5s ease-in-out infinite; }
+      @keyframes pct44 {
+        0% { opacity: 0; }
+        26.37% { opacity: 0; }
+        26.4% { opacity: 1; }
+        26.97% { opacity: 1; }
+        27% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-45 { animation: pct45 4.5s ease-in-out infinite; }
+      @keyframes pct45 {
+        0% { opacity: 0; }
+        26.97% { opacity: 0; }
+        27% { opacity: 1; }
+        27.57% { opacity: 1; }
+        27.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-46 { animation: pct46 4.5s ease-in-out infinite; }
+      @keyframes pct46 {
+        0% { opacity: 0; }
+        27.57% { opacity: 0; }
+        27.6% { opacity: 1; }
+        28.17% { opacity: 1; }
+        28.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-47 { animation: pct47 4.5s ease-in-out infinite; }
+      @keyframes pct47 {
+        0% { opacity: 0; }
+        28.17% { opacity: 0; }
+        28.2% { opacity: 1; }
+        28.77% { opacity: 1; }
+        28.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-48 { animation: pct48 4.5s ease-in-out infinite; }
+      @keyframes pct48 {
+        0% { opacity: 0; }
+        28.77% { opacity: 0; }
+        28.8% { opacity: 1; }
+        29.37% { opacity: 1; }
+        29.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-49 { animation: pct49 4.5s ease-in-out infinite; }
+      @keyframes pct49 {
+        0% { opacity: 0; }
+        29.37% { opacity: 0; }
+        29.4% { opacity: 1; }
+        29.97% { opacity: 1; }
+        30% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-50 { animation: pct50 4.5s ease-in-out infinite; }
+      @keyframes pct50 {
+        0% { opacity: 0; }
+        29.97% { opacity: 0; }
+        30% { opacity: 1; }
+        37.97% { opacity: 1; }
+        38% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-51 { animation: pct51 4.5s ease-in-out infinite; }
+      @keyframes pct51 {
+        0% { opacity: 0; }
+        37.97% { opacity: 0; }
+        38% { opacity: 1; }
+        38.145% { opacity: 1; }
+        38.175% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-52 { animation: pct52 4.5s ease-in-out infinite; }
+      @keyframes pct52 {
+        0% { opacity: 0; }
+        38.145% { opacity: 0; }
+        38.175% { opacity: 1; }
+        38.32% { opacity: 1; }
+        38.35% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-53 { animation: pct53 4.5s ease-in-out infinite; }
+      @keyframes pct53 {
+        0% { opacity: 0; }
+        38.32% { opacity: 0; }
+        38.35% { opacity: 1; }
+        38.495% { opacity: 1; }
+        38.525% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-54 { animation: pct54 4.5s ease-in-out infinite; }
+      @keyframes pct54 {
+        0% { opacity: 0; }
+        38.495% { opacity: 0; }
+        38.525% { opacity: 1; }
+        38.67% { opacity: 1; }
+        38.7% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-55 { animation: pct55 4.5s ease-in-out infinite; }
+      @keyframes pct55 {
+        0% { opacity: 0; }
+        38.67% { opacity: 0; }
+        38.7% { opacity: 1; }
+        38.845% { opacity: 1; }
+        38.875% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-56 { animation: pct56 4.5s ease-in-out infinite; }
+      @keyframes pct56 {
+        0% { opacity: 0; }
+        38.845% { opacity: 0; }
+        38.875% { opacity: 1; }
+        39.02% { opacity: 1; }
+        39.05% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-57 { animation: pct57 4.5s ease-in-out infinite; }
+      @keyframes pct57 {
+        0% { opacity: 0; }
+        39.02% { opacity: 0; }
+        39.05% { opacity: 1; }
+        39.195% { opacity: 1; }
+        39.225% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-58 { animation: pct58 4.5s ease-in-out infinite; }
+      @keyframes pct58 {
+        0% { opacity: 0; }
+        39.195% { opacity: 0; }
+        39.225% { opacity: 1; }
+        39.37% { opacity: 1; }
+        39.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-59 { animation: pct59 4.5s ease-in-out infinite; }
+      @keyframes pct59 {
+        0% { opacity: 0; }
+        39.37% { opacity: 0; }
+        39.4% { opacity: 1; }
+        39.545% { opacity: 1; }
+        39.575% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-60 { animation: pct60 4.5s ease-in-out infinite; }
+      @keyframes pct60 {
+        0% { opacity: 0; }
+        39.545% { opacity: 0; }
+        39.575% { opacity: 1; }
+        39.72% { opacity: 1; }
+        39.75% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-61 { animation: pct61 4.5s ease-in-out infinite; }
+      @keyframes pct61 {
+        0% { opacity: 0; }
+        39.72% { opacity: 0; }
+        39.75% { opacity: 1; }
+        39.895% { opacity: 1; }
+        39.925% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-62 { animation: pct62 4.5s ease-in-out infinite; }
+      @keyframes pct62 {
+        0% { opacity: 0; }
+        39.895% { opacity: 0; }
+        39.925% { opacity: 1; }
+        40.07% { opacity: 1; }
+        40.1% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-63 { animation: pct63 4.5s ease-in-out infinite; }
+      @keyframes pct63 {
+        0% { opacity: 0; }
+        40.07% { opacity: 0; }
+        40.1% { opacity: 1; }
+        40.245% { opacity: 1; }
+        40.275% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-64 { animation: pct64 4.5s ease-in-out infinite; }
+      @keyframes pct64 {
+        0% { opacity: 0; }
+        40.245% { opacity: 0; }
+        40.275% { opacity: 1; }
+        40.42% { opacity: 1; }
+        40.45% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-65 { animation: pct65 4.5s ease-in-out infinite; }
+      @keyframes pct65 {
+        0% { opacity: 0; }
+        40.42% { opacity: 0; }
+        40.45% { opacity: 1; }
+        40.595% { opacity: 1; }
+        40.625% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-66 { animation: pct66 4.5s ease-in-out infinite; }
+      @keyframes pct66 {
+        0% { opacity: 0; }
+        40.595% { opacity: 0; }
+        40.625% { opacity: 1; }
+        40.77% { opacity: 1; }
+        40.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-67 { animation: pct67 4.5s ease-in-out infinite; }
+      @keyframes pct67 {
+        0% { opacity: 0; }
+        40.77% { opacity: 0; }
+        40.8% { opacity: 1; }
+        40.945% { opacity: 1; }
+        40.975% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-68 { animation: pct68 4.5s ease-in-out infinite; }
+      @keyframes pct68 {
+        0% { opacity: 0; }
+        40.945% { opacity: 0; }
+        40.975% { opacity: 1; }
+        41.12% { opacity: 1; }
+        41.15% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-69 { animation: pct69 4.5s ease-in-out infinite; }
+      @keyframes pct69 {
+        0% { opacity: 0; }
+        41.12% { opacity: 0; }
+        41.15% { opacity: 1; }
+        41.295% { opacity: 1; }
+        41.325% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-70 { animation: pct70 4.5s ease-in-out infinite; }
+      @keyframes pct70 {
+        0% { opacity: 0; }
+        41.295% { opacity: 0; }
+        41.325% { opacity: 1; }
+        41.47% { opacity: 1; }
+        41.5% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-71 { animation: pct71 4.5s ease-in-out infinite; }
+      @keyframes pct71 {
+        0% { opacity: 0; }
+        41.47% { opacity: 0; }
+        41.5% { opacity: 1; }
+        41.645% { opacity: 1; }
+        41.675% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-72 { animation: pct72 4.5s ease-in-out infinite; }
+      @keyframes pct72 {
+        0% { opacity: 0; }
+        41.645% { opacity: 0; }
+        41.675% { opacity: 1; }
+        41.82% { opacity: 1; }
+        41.85% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-73 { animation: pct73 4.5s ease-in-out infinite; }
+      @keyframes pct73 {
+        0% { opacity: 0; }
+        41.82% { opacity: 0; }
+        41.85% { opacity: 1; }
+        41.995% { opacity: 1; }
+        42.025% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-74 { animation: pct74 4.5s ease-in-out infinite; }
+      @keyframes pct74 {
+        0% { opacity: 0; }
+        41.995% { opacity: 0; }
+        42.025% { opacity: 1; }
+        42.17% { opacity: 1; }
+        42.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-75 { animation: pct75 4.5s ease-in-out infinite; }
+      @keyframes pct75 {
+        0% { opacity: 0; }
+        42.17% { opacity: 0; }
+        42.2% { opacity: 1; }
+        42.345% { opacity: 1; }
+        42.375% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-76 { animation: pct76 4.5s ease-in-out infinite; }
+      @keyframes pct76 {
+        0% { opacity: 0; }
+        42.345% { opacity: 0; }
+        42.375% { opacity: 1; }
+        42.52% { opacity: 1; }
+        42.55% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-77 { animation: pct77 4.5s ease-in-out infinite; }
+      @keyframes pct77 {
+        0% { opacity: 0; }
+        42.52% { opacity: 0; }
+        42.55% { opacity: 1; }
+        42.695% { opacity: 1; }
+        42.725% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-78 { animation: pct78 4.5s ease-in-out infinite; }
+      @keyframes pct78 {
+        0% { opacity: 0; }
+        42.695% { opacity: 0; }
+        42.725% { opacity: 1; }
+        42.87% { opacity: 1; }
+        42.9% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-79 { animation: pct79 4.5s ease-in-out infinite; }
+      @keyframes pct79 {
+        0% { opacity: 0; }
+        42.87% { opacity: 0; }
+        42.9% { opacity: 1; }
+        43.045% { opacity: 1; }
+        43.075% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-80 { animation: pct80 4.5s ease-in-out infinite; }
+      @keyframes pct80 {
+        0% { opacity: 0; }
+        43.045% { opacity: 0; }
+        43.075% { opacity: 1; }
+        43.22% { opacity: 1; }
+        43.25% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-81 { animation: pct81 4.5s ease-in-out infinite; }
+      @keyframes pct81 {
+        0% { opacity: 0; }
+        43.22% { opacity: 0; }
+        43.25% { opacity: 1; }
+        43.395% { opacity: 1; }
+        43.425% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-82 { animation: pct82 4.5s ease-in-out infinite; }
+      @keyframes pct82 {
+        0% { opacity: 0; }
+        43.395% { opacity: 0; }
+        43.425% { opacity: 1; }
+        43.57% { opacity: 1; }
+        43.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-83 { animation: pct83 4.5s ease-in-out infinite; }
+      @keyframes pct83 {
+        0% { opacity: 0; }
+        43.57% { opacity: 0; }
+        43.6% { opacity: 1; }
+        43.745% { opacity: 1; }
+        43.775% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-84 { animation: pct84 4.5s ease-in-out infinite; }
+      @keyframes pct84 {
+        0% { opacity: 0; }
+        43.745% { opacity: 0; }
+        43.775% { opacity: 1; }
+        43.92% { opacity: 1; }
+        43.95% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-85 { animation: pct85 4.5s ease-in-out infinite; }
+      @keyframes pct85 {
+        0% { opacity: 0; }
+        43.92% { opacity: 0; }
+        43.95% { opacity: 1; }
+        44.095% { opacity: 1; }
+        44.125% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-86 { animation: pct86 4.5s ease-in-out infinite; }
+      @keyframes pct86 {
+        0% { opacity: 0; }
+        44.095% { opacity: 0; }
+        44.125% { opacity: 1; }
+        44.27% { opacity: 1; }
+        44.3% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-87 { animation: pct87 4.5s ease-in-out infinite; }
+      @keyframes pct87 {
+        0% { opacity: 0; }
+        44.27% { opacity: 0; }
+        44.3% { opacity: 1; }
+        44.445% { opacity: 1; }
+        44.475% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-88 { animation: pct88 4.5s ease-in-out infinite; }
+      @keyframes pct88 {
+        0% { opacity: 0; }
+        44.445% { opacity: 0; }
+        44.475% { opacity: 1; }
+        44.62% { opacity: 1; }
+        44.65% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-89 { animation: pct89 4.5s ease-in-out infinite; }
+      @keyframes pct89 {
+        0% { opacity: 0; }
+        44.62% { opacity: 0; }
+        44.65% { opacity: 1; }
+        44.795% { opacity: 1; }
+        44.825% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-90 { animation: pct90 4.5s ease-in-out infinite; }
+      @keyframes pct90 {
+        0% { opacity: 0; }
+        44.795% { opacity: 0; }
+        44.825% { opacity: 1; }
+        44.97% { opacity: 1; }
+        45% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-91 { animation: pct91 4.5s ease-in-out infinite; }
+      @keyframes pct91 {
+        0% { opacity: 0; }
+        44.97% { opacity: 0; }
+        45% { opacity: 1; }
+        49.414% { opacity: 1; }
+        49.444% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-92 { animation: pct92 4.5s ease-in-out infinite; }
+      @keyframes pct92 {
+        0% { opacity: 0; }
+        49.414% { opacity: 0; }
+        49.444% { opacity: 1; }
+        53.859% { opacity: 1; }
+        53.889% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-93 { animation: pct93 4.5s ease-in-out infinite; }
+      @keyframes pct93 {
+        0% { opacity: 0; }
+        53.859% { opacity: 0; }
+        53.889% { opacity: 1; }
+        58.303% { opacity: 1; }
+        58.333% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-94 { animation: pct94 4.5s ease-in-out infinite; }
+      @keyframes pct94 {
+        0% { opacity: 0; }
+        58.303% { opacity: 0; }
+        58.333% { opacity: 1; }
+        62.748% { opacity: 1; }
+        62.778% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-95 { animation: pct95 4.5s ease-in-out infinite; }
+      @keyframes pct95 {
+        0% { opacity: 0; }
+        62.748% { opacity: 0; }
+        62.778% { opacity: 1; }
+        67.192% { opacity: 1; }
+        67.222% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-96 { animation: pct96 4.5s ease-in-out infinite; }
+      @keyframes pct96 {
+        0% { opacity: 0; }
+        67.192% { opacity: 0; }
+        67.222% { opacity: 1; }
+        71.637% { opacity: 1; }
+        71.667% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-97 { animation: pct97 4.5s ease-in-out infinite; }
+      @keyframes pct97 {
+        0% { opacity: 0; }
+        71.637% { opacity: 0; }
+        71.667% { opacity: 1; }
+        76.081% { opacity: 1; }
+        76.111% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-98 { animation: pct98 4.5s ease-in-out infinite; }
+      @keyframes pct98 {
+        0% { opacity: 0; }
+        76.081% { opacity: 0; }
+        76.111% { opacity: 1; }
+        80.526% { opacity: 1; }
+        80.556% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-99 { animation: pct99 4.5s ease-in-out infinite; }
+      @keyframes pct99 {
+        0% { opacity: 0; }
+        80.526% { opacity: 0; }
+        80.556% { opacity: 1; }
+        96.97% { opacity: 1; }
+        97% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-100 { animation: pct100 4.5s ease-in-out infinite; }
+      @keyframes pct100 {
+        0% { opacity: 0; }
+        96.97% { opacity: 0; }
+        97% { opacity: 1; }
+        100% { opacity: 1; }
+      }
 
       .avatar-ring {
         fill: none;
@@ -67,12 +979,108 @@
   <rect class="bar-bg" x="120" y="98" width="480" height="14" rx="3"/>
   <rect class="bar-fill" x="120" y="98" height="14" rx="3"/>
 
-  <g transform="translate(630,98)">
-    <rect class="block" x="0"  y="0" width="12" height="14" rx="2"/>
-    <rect class="block" x="18" y="0" width="12" height="14" rx="2"/>
-    <rect class="block" x="36" y="0" width="12" height="14" rx="2"/>
-    <rect class="block" x="54" y="0" width="12" height="14" rx="2"/>
-    <rect class="block" x="72" y="0" width="12" height="14" rx="2"/>
+  <g transform="translate(650,110)">
+    <text class="pct pct-0" text-anchor="middle">0%</text>
+    <text class="pct pct-1" text-anchor="middle">1%</text>
+    <text class="pct pct-2" text-anchor="middle">2%</text>
+    <text class="pct pct-3" text-anchor="middle">3%</text>
+    <text class="pct pct-4" text-anchor="middle">4%</text>
+    <text class="pct pct-5" text-anchor="middle">5%</text>
+    <text class="pct pct-6" text-anchor="middle">6%</text>
+    <text class="pct pct-7" text-anchor="middle">7%</text>
+    <text class="pct pct-8" text-anchor="middle">8%</text>
+    <text class="pct pct-9" text-anchor="middle">9%</text>
+    <text class="pct pct-10" text-anchor="middle">10%</text>
+    <text class="pct pct-11" text-anchor="middle">11%</text>
+    <text class="pct pct-12" text-anchor="middle">12%</text>
+    <text class="pct pct-13" text-anchor="middle">13%</text>
+    <text class="pct pct-14" text-anchor="middle">14%</text>
+    <text class="pct pct-15" text-anchor="middle">15%</text>
+    <text class="pct pct-16" text-anchor="middle">16%</text>
+    <text class="pct pct-17" text-anchor="middle">17%</text>
+    <text class="pct pct-18" text-anchor="middle">18%</text>
+    <text class="pct pct-19" text-anchor="middle">19%</text>
+    <text class="pct pct-20" text-anchor="middle">20%</text>
+    <text class="pct pct-21" text-anchor="middle">21%</text>
+    <text class="pct pct-22" text-anchor="middle">22%</text>
+    <text class="pct pct-23" text-anchor="middle">23%</text>
+    <text class="pct pct-24" text-anchor="middle">24%</text>
+    <text class="pct pct-25" text-anchor="middle">25%</text>
+    <text class="pct pct-26" text-anchor="middle">26%</text>
+    <text class="pct pct-27" text-anchor="middle">27%</text>
+    <text class="pct pct-28" text-anchor="middle">28%</text>
+    <text class="pct pct-29" text-anchor="middle">29%</text>
+    <text class="pct pct-30" text-anchor="middle">30%</text>
+    <text class="pct pct-31" text-anchor="middle">31%</text>
+    <text class="pct pct-32" text-anchor="middle">32%</text>
+    <text class="pct pct-33" text-anchor="middle">33%</text>
+    <text class="pct pct-34" text-anchor="middle">34%</text>
+    <text class="pct pct-35" text-anchor="middle">35%</text>
+    <text class="pct pct-36" text-anchor="middle">36%</text>
+    <text class="pct pct-37" text-anchor="middle">37%</text>
+    <text class="pct pct-38" text-anchor="middle">38%</text>
+    <text class="pct pct-39" text-anchor="middle">39%</text>
+    <text class="pct pct-40" text-anchor="middle">40%</text>
+    <text class="pct pct-41" text-anchor="middle">41%</text>
+    <text class="pct pct-42" text-anchor="middle">42%</text>
+    <text class="pct pct-43" text-anchor="middle">43%</text>
+    <text class="pct pct-44" text-anchor="middle">44%</text>
+    <text class="pct pct-45" text-anchor="middle">45%</text>
+    <text class="pct pct-46" text-anchor="middle">46%</text>
+    <text class="pct pct-47" text-anchor="middle">47%</text>
+    <text class="pct pct-48" text-anchor="middle">48%</text>
+    <text class="pct pct-49" text-anchor="middle">49%</text>
+    <text class="pct pct-50" text-anchor="middle">50%</text>
+    <text class="pct pct-51" text-anchor="middle">51%</text>
+    <text class="pct pct-52" text-anchor="middle">52%</text>
+    <text class="pct pct-53" text-anchor="middle">53%</text>
+    <text class="pct pct-54" text-anchor="middle">54%</text>
+    <text class="pct pct-55" text-anchor="middle">55%</text>
+    <text class="pct pct-56" text-anchor="middle">56%</text>
+    <text class="pct pct-57" text-anchor="middle">57%</text>
+    <text class="pct pct-58" text-anchor="middle">58%</text>
+    <text class="pct pct-59" text-anchor="middle">59%</text>
+    <text class="pct pct-60" text-anchor="middle">60%</text>
+    <text class="pct pct-61" text-anchor="middle">61%</text>
+    <text class="pct pct-62" text-anchor="middle">62%</text>
+    <text class="pct pct-63" text-anchor="middle">63%</text>
+    <text class="pct pct-64" text-anchor="middle">64%</text>
+    <text class="pct pct-65" text-anchor="middle">65%</text>
+    <text class="pct pct-66" text-anchor="middle">66%</text>
+    <text class="pct pct-67" text-anchor="middle">67%</text>
+    <text class="pct pct-68" text-anchor="middle">68%</text>
+    <text class="pct pct-69" text-anchor="middle">69%</text>
+    <text class="pct pct-70" text-anchor="middle">70%</text>
+    <text class="pct pct-71" text-anchor="middle">71%</text>
+    <text class="pct pct-72" text-anchor="middle">72%</text>
+    <text class="pct pct-73" text-anchor="middle">73%</text>
+    <text class="pct pct-74" text-anchor="middle">74%</text>
+    <text class="pct pct-75" text-anchor="middle">75%</text>
+    <text class="pct pct-76" text-anchor="middle">76%</text>
+    <text class="pct pct-77" text-anchor="middle">77%</text>
+    <text class="pct pct-78" text-anchor="middle">78%</text>
+    <text class="pct pct-79" text-anchor="middle">79%</text>
+    <text class="pct pct-80" text-anchor="middle">80%</text>
+    <text class="pct pct-81" text-anchor="middle">81%</text>
+    <text class="pct pct-82" text-anchor="middle">82%</text>
+    <text class="pct pct-83" text-anchor="middle">83%</text>
+    <text class="pct pct-84" text-anchor="middle">84%</text>
+    <text class="pct pct-85" text-anchor="middle">85%</text>
+    <text class="pct pct-86" text-anchor="middle">86%</text>
+    <text class="pct pct-87" text-anchor="middle">87%</text>
+    <text class="pct pct-88" text-anchor="middle">88%</text>
+    <text class="pct pct-89" text-anchor="middle">89%</text>
+    <text class="pct pct-90" text-anchor="middle">90%</text>
+    <text class="pct pct-91" text-anchor="middle">91%</text>
+    <text class="pct pct-92" text-anchor="middle">92%</text>
+    <text class="pct pct-93" text-anchor="middle">93%</text>
+    <text class="pct pct-94" text-anchor="middle">94%</text>
+    <text class="pct pct-95" text-anchor="middle">95%</text>
+    <text class="pct pct-96" text-anchor="middle">96%</text>
+    <text class="pct pct-97" text-anchor="middle">97%</text>
+    <text class="pct pct-98" text-anchor="middle">98%</text>
+    <text class="pct pct-99" text-anchor="middle">99%</text>
+    <text class="pct pct-100" text-anchor="middle">100%</text>
   </g>
 
   <text x="120" y="128" class="sub">__TOTAL_CONTRIBUTIONS__ contributions · __TOP_REPOS_LINE__</text>
