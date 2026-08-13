@@ -99,7 +99,7 @@
 
 # 🕹️ Try My Games
 
-<table style="border-collapse: collapse; background: #0d1117; color: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+<table style="border-collapse: collapse; background: #0d1117; color: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; width: auto !important; margin: 0 auto;">
   <tr>
     <td align="center" width="300" style="border: 1px solid #30363d; padding: 16px;">
       <a href="https://l-malakar.github.io/LLOF/">
