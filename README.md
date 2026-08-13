@@ -83,7 +83,7 @@
   <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
     <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
       <a href="https://github.com/L-Malakar#-my-status">
-        <img src="https://streak-stats.demolab.com?user=L-Malakar&locale=en&mode=weekly&theme=merko&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=L-Malakar&locale=en&mode=weekly&theme=merko&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" />
       </a>
       <a href="https://github.com/L-Malakar#-my-status">
         <img src="https://raw.githubusercontent.com/L-Malakar/L-Malakar/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&hide_border=false&order=2" height="150" alt="languages graph" />
