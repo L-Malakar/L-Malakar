@@ -99,29 +99,28 @@
 
 # 🕹️ Try My Games
 
-<table>
+<table style="border-collapse: collapse; background: #0d1117; color: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
   <tr>
-    <td align="center" width="300">
+    <td align="center" width="300" style="border: 1px solid #30363d; padding: 16px;">
       <a href="https://l-malakar.github.io/LLOF/">
         <img src="https://l-malakar.github.io/LLOF/asset/logo.svg" width="120" height="120">
       </a><br>
-      <b><a href="https://github.com/L-Malakar/LLOF">LLOF</a></b><br>
-      <sub>A browser-based game — click through to play instantly, no install needed.</sub><br><br>
+      <b><a href="https://github.com/L-Malakar/LLOF" style="color: #58a6ff; text-decoration: none;">LLOF</a></b><br>
+      <sub style="color: #8b949e;">A browser-based game — click through to play instantly, no install needed.</sub><br><br>
       <a href="https://l-malakar.github.io/LLOF/">
         <img src="https://img.shields.io/badge/▶_Play_Now-4CAF50?style=for-the-badge&logoColor=white" alt="Play LLOF" />
       </a>
     </td>
-    <td align="center" width="300">
+    <td align="center" width="300" style="border: 1px solid #30363d; padding: 16px;">
       <a href="https://l-malakar.github.io/HAND-NINJA/">
         <img src="https://l-malakar.github.io/HAND-NINJA/asset/logo.svg" width="120" height="120">
       </a><br>
-      <b><a href="https://github.com/L-Malakar/HAND-NINJA">Hand Ninja</a></b><br>
-      <sub>A fast-paced browser game built for quick reflex-based play.</sub><br><br>
+      <b><a href="https://github.com/L-Malakar/HAND-NINJA" style="color: #58a6ff; text-decoration: none;">Hand Ninja</a></b><br>
+      <sub style="color: #8b949e;">A fast-paced browser game built for quick reflex-based play.</sub><br><br>
       <a href="https://l-malakar.github.io/HAND-NINJA/">
         <img src="https://img.shields.io/badge/▶_Play_Now-4CAF50?style=for-the-badge&logoColor=white" alt="Play Hand Ninja" />
       </a>
     </td>
   </tr>
 </table>
-
 </div>
