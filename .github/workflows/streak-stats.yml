@@ -1,0 +1,19 @@
+name: Generate Streak Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: DenverCoder1/github-readme-streak-stats@master
+        with:
+          user_id: L-Malakar
+          output: streak-stats-output/streak-stats.svg
+          theme: merko
+          mode: weekly
