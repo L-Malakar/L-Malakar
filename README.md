@@ -6,7 +6,7 @@
 
 <br>
 
-# L-Malakar
+# LMalakar
 
 **Builder. Game maker. Always chasing the next idea worth shipping.**
 
@@ -40,12 +40,14 @@
 
 ### About
 <img data-importer="image" align="right" height="200" src="https://github.com/L-Malakar/L-Malakar/blob/main/images/walking_char.gif?raw=true" />
-I'll pick up almost any language or framework if it means building something fun. Right now that means games — **LLOF** and **Hand Ninja**, two playable browser demos below — plus the occasional web app or tool for anyone who wants to build together.
 
-Ask me about:
-- **LLOF** — a browser-based demo, no install needed
-- **Hand Ninja** — fast-paced, reflex-driven gameplay
-- Programming problems in general — happy to help or get help
+I'll pick up almost any language or framework if it means building something fun. Right now that means games:- `LLOF` and `Hand Ninja`, two playable browser demos below, plus the occasional web app or tool for anyone who wants to build together.
+
+#### Ask me about:
+
+- **LLOF** a browser-based demo, no install needed
+- **Hand Ninja** fast-paced, reflex-driven gameplay
+- Programming problems in general, happy to help or get help
 
 <br clear="both">
 
@@ -145,7 +147,7 @@ Ask me about:
 
 ### Play
 
-<sub>Two demos, built solo, playable right now — no install required.</sub>
+<sub>Two demos, built solo, playable right now, no install required.</sub>
 
 <br><br>
 
@@ -156,7 +158,7 @@ Ask me about:
         <img src="https://l-malakar.github.io/LLOF/asset/logo.svg" width="110" height="110">
       </a><br><br>
       <b><a href="https://github.com/L-Malakar/LLOF" style="color: #58a6ff; text-decoration: none;">LLOF</a></b><br>
-      <sub style="color: #8b949e;">A browser-based game — click through to play instantly.</sub><br><br>
+      <sub style="color: #8b949e;">A browser-based game, click through to play instantly.</sub><br><br>
       <a href="https://l-malakar.github.io/LLOF/">
         <img src="https://img.shields.io/badge/▶_Play_Now-000000?style=for-the-badge&logoColor=white" alt="Play LLOF" />
       </a>
