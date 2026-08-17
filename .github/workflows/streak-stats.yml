@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: DenverCoder1/github-readme-streak-stats@master
+      - uses: DenverCoder1/github-readme-streak-stats@v2
         with:
           user_id: L-Malakar
           output: streak-stats-output/streak-stats.svg
