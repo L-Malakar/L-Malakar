@@ -4,33 +4,29 @@
       <circle cx="60" cy="75" r="34"/>
     </clipPath>
     <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0071e3"/>
-      <stop offset="100%" stop-color="#5ac8fa"/>
-    </linearGradient>
-    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0071e3"/>
-      <stop offset="100%" stop-color="#5ac8fa"/>
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
     <style>
-      .bg { fill: #f5f5f7; }
-      .frame { fill: none; stroke: #d2d2d7; stroke-width: 1; }
+      .bg { fill: #0d1117; }
+      .frame { fill: none; stroke: #30363d; stroke-width: 2; }
       .title {
-        font-family: -apple-system, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif;
-        font-size: 26px;
-        fill: #1d1d1f;
-        font-weight: 600;
-        letter-spacing: -0.3px;
+        font-family: 'Segoe UI', 'Courier New', monospace;
+        font-size: 27px;
+        fill: #e6edf3;
+        font-weight: bold;
       }
-      .accent { fill: #0071e3; }
+      .accent { fill: #39d353; }
       .sub {
-        font-family: -apple-system, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif;
-        font-size: 13px;
-        fill: #6e6e73;
-        letter-spacing: 0.1px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #8b949e;
       }
+      .cursor { fill: #39d353; animation: blink 1s steps(2, start) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
 
-      .bar-bg { fill: #e8e8ed; stroke: none; }
-      .bar-fill { fill: url(#barGrad); animation: load 4.5s ease-in-out infinite; }
+      .bar-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+      .bar-fill { fill: #39d353; animation: load 4.5s ease-in-out infinite; }
       @keyframes load {
         0%    { width: 0px; }
         30%   { width: 240px; }
@@ -44,10 +40,10 @@
 
       /* Percentage counter — every integer 0-100, stepped in sync with the bar */
       .pct {
-        font-family: -apple-system, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        fill: #0071e3;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        fill: #58a6ff;
         opacity: 0;
       }
       .pct-0 { animation: pct0 4.5s ease-in-out infinite; }
@@ -959,7 +955,7 @@
       .avatar-ring {
         fill: none;
         stroke: url(#avatarGrad);
-        stroke-width: 2.5;
+        stroke-width: 3;
         animation: spin 3s linear infinite;
         transform-origin: 60px 75px;
       }
@@ -967,8 +963,8 @@
     </style>
   </defs>
 
-  <rect class="bg" width="900" height="150" rx="14"/>
-  <rect class="frame" x="1" y="1" width="898" height="148" rx="14"/>
+  <rect class="bg" width="900" height="150" rx="10"/>
+  <rect class="frame" x="1" y="1" width="898" height="148" rx="10"/>
 
   <image
     x="26" y="41" width="68" height="68"
@@ -977,13 +973,13 @@
   />
   <circle class="avatar-ring" cx="60" cy="75" r="38" stroke-dasharray="180 60"/>
 
-  <text x="120" y="55" class="title">__NAME__</text>
-  <text x="120" y="78" class="sub">building games &amp; web apps · open to collaboration</text>
+  <text x="120" y="55" class="title">__NAME__<tspan class="accent">.</tspan><tspan class="cursor">_</tspan></text>
+  <text x="120" y="78" class="sub">building games &amp; web apps · open to collab</text>
 
-  <rect class="bar-bg" x="120" y="98" width="480" height="10" rx="5"/>
-  <rect class="bar-fill" x="120" y="98" height="10" rx="5"/>
+  <rect class="bar-bg" x="120" y="98" width="480" height="14" rx="3"/>
+  <rect class="bar-fill" x="120" y="98" height="14" rx="3"/>
 
-  <g transform="translate(650,107)">
+  <g transform="translate(650,110)">
     <text class="pct pct-0" text-anchor="middle">0%</text>
     <text class="pct pct-1" text-anchor="middle">1%</text>
     <text class="pct pct-2" text-anchor="middle">2%</text>
