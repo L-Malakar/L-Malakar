@@ -181,5 +181,5 @@ I'll pick up almost any language or framework if it means building something fun
 <br>
 
 <div align="center">
-  <sub>Thanks for stopping by 👋</sub>
+  <sub>Thanks for stopping bey 👋</sub>
 </div>
