@@ -1,0 +1,1187 @@
+<svg width="100%" height="150" viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="avatarClip">
+      <circle cx="60" cy="75" r="34"/>
+    </clipPath>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #0d1117; }
+      .frame { fill: none; stroke: #30363d; stroke-width: 2; }
+      .title {
+        font-family: 'Segoe UI', 'Courier New', monospace;
+        font-size: 27px;
+        fill: #e6edf3;
+        font-weight: bold;
+      }
+      .accent { fill: #39d353; }
+      .sub {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #8b949e;
+      }
+      .cursor { fill: #39d353; animation: blink 1s steps(2, start) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      .bar-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+      .bar-fill { fill: #39d353; animation: load 4.5s ease-in-out infinite; }
+      @keyframes load {
+        0%    { width: 0px; }
+        30%   { width: 240px; }
+        38%   { width: 240px; }
+        45%   { width: 432px; }
+        85%   { width: 475.2px; }
+        95%   { width: 475.2px; }
+        97%   { width: 480px; }
+        100%  { width: 480px; }
+      }
+
+      /* Percentage counter — every integer 0-100, stepped in sync with the bar */
+      .pct {
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        fill: #58a6ff;
+        opacity: 0;
+      }
+      .pct-0 { animation: pct0 4.5s ease-in-out infinite; }
+      @keyframes pct0 {
+        0% { opacity: 1; }
+        0.57% { opacity: 1; }
+        0.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-1 { animation: pct1 4.5s ease-in-out infinite; }
+      @keyframes pct1 {
+        0% { opacity: 0; }
+        0.57% { opacity: 0; }
+        0.6% { opacity: 1; }
+        1.17% { opacity: 1; }
+        1.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-2 { animation: pct2 4.5s ease-in-out infinite; }
+      @keyframes pct2 {
+        0% { opacity: 0; }
+        1.17% { opacity: 0; }
+        1.2% { opacity: 1; }
+        1.77% { opacity: 1; }
+        1.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-3 { animation: pct3 4.5s ease-in-out infinite; }
+      @keyframes pct3 {
+        0% { opacity: 0; }
+        1.77% { opacity: 0; }
+        1.8% { opacity: 1; }
+        2.37% { opacity: 1; }
+        2.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-4 { animation: pct4 4.5s ease-in-out infinite; }
+      @keyframes pct4 {
+        0% { opacity: 0; }
+        2.37% { opacity: 0; }
+        2.4% { opacity: 1; }
+        2.97% { opacity: 1; }
+        3% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-5 { animation: pct5 4.5s ease-in-out infinite; }
+      @keyframes pct5 {
+        0% { opacity: 0; }
+        2.97% { opacity: 0; }
+        3% { opacity: 1; }
+        3.57% { opacity: 1; }
+        3.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-6 { animation: pct6 4.5s ease-in-out infinite; }
+      @keyframes pct6 {
+        0% { opacity: 0; }
+        3.57% { opacity: 0; }
+        3.6% { opacity: 1; }
+        4.17% { opacity: 1; }
+        4.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-7 { animation: pct7 4.5s ease-in-out infinite; }
+      @keyframes pct7 {
+        0% { opacity: 0; }
+        4.17% { opacity: 0; }
+        4.2% { opacity: 1; }
+        4.77% { opacity: 1; }
+        4.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-8 { animation: pct8 4.5s ease-in-out infinite; }
+      @keyframes pct8 {
+        0% { opacity: 0; }
+        4.77% { opacity: 0; }
+        4.8% { opacity: 1; }
+        5.37% { opacity: 1; }
+        5.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-9 { animation: pct9 4.5s ease-in-out infinite; }
+      @keyframes pct9 {
+        0% { opacity: 0; }
+        5.37% { opacity: 0; }
+        5.4% { opacity: 1; }
+        5.97% { opacity: 1; }
+        6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-10 { animation: pct10 4.5s ease-in-out infinite; }
+      @keyframes pct10 {
+        0% { opacity: 0; }
+        5.97% { opacity: 0; }
+        6% { opacity: 1; }
+        6.57% { opacity: 1; }
+        6.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-11 { animation: pct11 4.5s ease-in-out infinite; }
+      @keyframes pct11 {
+        0% { opacity: 0; }
+        6.57% { opacity: 0; }
+        6.6% { opacity: 1; }
+        7.17% { opacity: 1; }
+        7.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-12 { animation: pct12 4.5s ease-in-out infinite; }
+      @keyframes pct12 {
+        0% { opacity: 0; }
+        7.17% { opacity: 0; }
+        7.2% { opacity: 1; }
+        7.77% { opacity: 1; }
+        7.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-13 { animation: pct13 4.5s ease-in-out infinite; }
+      @keyframes pct13 {
+        0% { opacity: 0; }
+        7.77% { opacity: 0; }
+        7.8% { opacity: 1; }
+        8.37% { opacity: 1; }
+        8.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-14 { animation: pct14 4.5s ease-in-out infinite; }
+      @keyframes pct14 {
+        0% { opacity: 0; }
+        8.37% { opacity: 0; }
+        8.4% { opacity: 1; }
+        8.97% { opacity: 1; }
+        9% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-15 { animation: pct15 4.5s ease-in-out infinite; }
+      @keyframes pct15 {
+        0% { opacity: 0; }
+        8.97% { opacity: 0; }
+        9% { opacity: 1; }
+        9.57% { opacity: 1; }
+        9.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-16 { animation: pct16 4.5s ease-in-out infinite; }
+      @keyframes pct16 {
+        0% { opacity: 0; }
+        9.57% { opacity: 0; }
+        9.6% { opacity: 1; }
+        10.17% { opacity: 1; }
+        10.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-17 { animation: pct17 4.5s ease-in-out infinite; }
+      @keyframes pct17 {
+        0% { opacity: 0; }
+        10.17% { opacity: 0; }
+        10.2% { opacity: 1; }
+        10.77% { opacity: 1; }
+        10.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-18 { animation: pct18 4.5s ease-in-out infinite; }
+      @keyframes pct18 {
+        0% { opacity: 0; }
+        10.77% { opacity: 0; }
+        10.8% { opacity: 1; }
+        11.37% { opacity: 1; }
+        11.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-19 { animation: pct19 4.5s ease-in-out infinite; }
+      @keyframes pct19 {
+        0% { opacity: 0; }
+        11.37% { opacity: 0; }
+        11.4% { opacity: 1; }
+        11.97% { opacity: 1; }
+        12% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-20 { animation: pct20 4.5s ease-in-out infinite; }
+      @keyframes pct20 {
+        0% { opacity: 0; }
+        11.97% { opacity: 0; }
+        12% { opacity: 1; }
+        12.57% { opacity: 1; }
+        12.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-21 { animation: pct21 4.5s ease-in-out infinite; }
+      @keyframes pct21 {
+        0% { opacity: 0; }
+        12.57% { opacity: 0; }
+        12.6% { opacity: 1; }
+        13.17% { opacity: 1; }
+        13.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-22 { animation: pct22 4.5s ease-in-out infinite; }
+      @keyframes pct22 {
+        0% { opacity: 0; }
+        13.17% { opacity: 0; }
+        13.2% { opacity: 1; }
+        13.77% { opacity: 1; }
+        13.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-23 { animation: pct23 4.5s ease-in-out infinite; }
+      @keyframes pct23 {
+        0% { opacity: 0; }
+        13.77% { opacity: 0; }
+        13.8% { opacity: 1; }
+        14.37% { opacity: 1; }
+        14.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-24 { animation: pct24 4.5s ease-in-out infinite; }
+      @keyframes pct24 {
+        0% { opacity: 0; }
+        14.37% { opacity: 0; }
+        14.4% { opacity: 1; }
+        14.97% { opacity: 1; }
+        15% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-25 { animation: pct25 4.5s ease-in-out infinite; }
+      @keyframes pct25 {
+        0% { opacity: 0; }
+        14.97% { opacity: 0; }
+        15% { opacity: 1; }
+        15.57% { opacity: 1; }
+        15.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-26 { animation: pct26 4.5s ease-in-out infinite; }
+      @keyframes pct26 {
+        0% { opacity: 0; }
+        15.57% { opacity: 0; }
+        15.6% { opacity: 1; }
+        16.17% { opacity: 1; }
+        16.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-27 { animation: pct27 4.5s ease-in-out infinite; }
+      @keyframes pct27 {
+        0% { opacity: 0; }
+        16.17% { opacity: 0; }
+        16.2% { opacity: 1; }
+        16.77% { opacity: 1; }
+        16.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-28 { animation: pct28 4.5s ease-in-out infinite; }
+      @keyframes pct28 {
+        0% { opacity: 0; }
+        16.77% { opacity: 0; }
+        16.8% { opacity: 1; }
+        17.37% { opacity: 1; }
+        17.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-29 { animation: pct29 4.5s ease-in-out infinite; }
+      @keyframes pct29 {
+        0% { opacity: 0; }
+        17.37% { opacity: 0; }
+        17.4% { opacity: 1; }
+        17.97% { opacity: 1; }
+        18% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-30 { animation: pct30 4.5s ease-in-out infinite; }
+      @keyframes pct30 {
+        0% { opacity: 0; }
+        17.97% { opacity: 0; }
+        18% { opacity: 1; }
+        18.57% { opacity: 1; }
+        18.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-31 { animation: pct31 4.5s ease-in-out infinite; }
+      @keyframes pct31 {
+        0% { opacity: 0; }
+        18.57% { opacity: 0; }
+        18.6% { opacity: 1; }
+        19.17% { opacity: 1; }
+        19.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-32 { animation: pct32 4.5s ease-in-out infinite; }
+      @keyframes pct32 {
+        0% { opacity: 0; }
+        19.17% { opacity: 0; }
+        19.2% { opacity: 1; }
+        19.77% { opacity: 1; }
+        19.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-33 { animation: pct33 4.5s ease-in-out infinite; }
+      @keyframes pct33 {
+        0% { opacity: 0; }
+        19.77% { opacity: 0; }
+        19.8% { opacity: 1; }
+        20.37% { opacity: 1; }
+        20.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-34 { animation: pct34 4.5s ease-in-out infinite; }
+      @keyframes pct34 {
+        0% { opacity: 0; }
+        20.37% { opacity: 0; }
+        20.4% { opacity: 1; }
+        20.97% { opacity: 1; }
+        21% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-35 { animation: pct35 4.5s ease-in-out infinite; }
+      @keyframes pct35 {
+        0% { opacity: 0; }
+        20.97% { opacity: 0; }
+        21% { opacity: 1; }
+        21.57% { opacity: 1; }
+        21.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-36 { animation: pct36 4.5s ease-in-out infinite; }
+      @keyframes pct36 {
+        0% { opacity: 0; }
+        21.57% { opacity: 0; }
+        21.6% { opacity: 1; }
+        22.17% { opacity: 1; }
+        22.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-37 { animation: pct37 4.5s ease-in-out infinite; }
+      @keyframes pct37 {
+        0% { opacity: 0; }
+        22.17% { opacity: 0; }
+        22.2% { opacity: 1; }
+        22.77% { opacity: 1; }
+        22.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-38 { animation: pct38 4.5s ease-in-out infinite; }
+      @keyframes pct38 {
+        0% { opacity: 0; }
+        22.77% { opacity: 0; }
+        22.8% { opacity: 1; }
+        23.37% { opacity: 1; }
+        23.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-39 { animation: pct39 4.5s ease-in-out infinite; }
+      @keyframes pct39 {
+        0% { opacity: 0; }
+        23.37% { opacity: 0; }
+        23.4% { opacity: 1; }
+        23.97% { opacity: 1; }
+        24% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-40 { animation: pct40 4.5s ease-in-out infinite; }
+      @keyframes pct40 {
+        0% { opacity: 0; }
+        23.97% { opacity: 0; }
+        24% { opacity: 1; }
+        24.57% { opacity: 1; }
+        24.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-41 { animation: pct41 4.5s ease-in-out infinite; }
+      @keyframes pct41 {
+        0% { opacity: 0; }
+        24.57% { opacity: 0; }
+        24.6% { opacity: 1; }
+        25.17% { opacity: 1; }
+        25.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-42 { animation: pct42 4.5s ease-in-out infinite; }
+      @keyframes pct42 {
+        0% { opacity: 0; }
+        25.17% { opacity: 0; }
+        25.2% { opacity: 1; }
+        25.77% { opacity: 1; }
+        25.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-43 { animation: pct43 4.5s ease-in-out infinite; }
+      @keyframes pct43 {
+        0% { opacity: 0; }
+        25.77% { opacity: 0; }
+        25.8% { opacity: 1; }
+        26.37% { opacity: 1; }
+        26.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-44 { animation: pct44 4.5s ease-in-out infinite; }
+      @keyframes pct44 {
+        0% { opacity: 0; }
+        26.37% { opacity: 0; }
+        26.4% { opacity: 1; }
+        26.97% { opacity: 1; }
+        27% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-45 { animation: pct45 4.5s ease-in-out infinite; }
+      @keyframes pct45 {
+        0% { opacity: 0; }
+        26.97% { opacity: 0; }
+        27% { opacity: 1; }
+        27.57% { opacity: 1; }
+        27.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-46 { animation: pct46 4.5s ease-in-out infinite; }
+      @keyframes pct46 {
+        0% { opacity: 0; }
+        27.57% { opacity: 0; }
+        27.6% { opacity: 1; }
+        28.17% { opacity: 1; }
+        28.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-47 { animation: pct47 4.5s ease-in-out infinite; }
+      @keyframes pct47 {
+        0% { opacity: 0; }
+        28.17% { opacity: 0; }
+        28.2% { opacity: 1; }
+        28.77% { opacity: 1; }
+        28.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-48 { animation: pct48 4.5s ease-in-out infinite; }
+      @keyframes pct48 {
+        0% { opacity: 0; }
+        28.77% { opacity: 0; }
+        28.8% { opacity: 1; }
+        29.37% { opacity: 1; }
+        29.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-49 { animation: pct49 4.5s ease-in-out infinite; }
+      @keyframes pct49 {
+        0% { opacity: 0; }
+        29.37% { opacity: 0; }
+        29.4% { opacity: 1; }
+        29.97% { opacity: 1; }
+        30% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-50 { animation: pct50 4.5s ease-in-out infinite; }
+      @keyframes pct50 {
+        0% { opacity: 0; }
+        29.97% { opacity: 0; }
+        30% { opacity: 1; }
+        37.97% { opacity: 1; }
+        38% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-51 { animation: pct51 4.5s ease-in-out infinite; }
+      @keyframes pct51 {
+        0% { opacity: 0; }
+        37.97% { opacity: 0; }
+        38% { opacity: 1; }
+        38.145% { opacity: 1; }
+        38.175% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-52 { animation: pct52 4.5s ease-in-out infinite; }
+      @keyframes pct52 {
+        0% { opacity: 0; }
+        38.145% { opacity: 0; }
+        38.175% { opacity: 1; }
+        38.32% { opacity: 1; }
+        38.35% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-53 { animation: pct53 4.5s ease-in-out infinite; }
+      @keyframes pct53 {
+        0% { opacity: 0; }
+        38.32% { opacity: 0; }
+        38.35% { opacity: 1; }
+        38.495% { opacity: 1; }
+        38.525% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-54 { animation: pct54 4.5s ease-in-out infinite; }
+      @keyframes pct54 {
+        0% { opacity: 0; }
+        38.495% { opacity: 0; }
+        38.525% { opacity: 1; }
+        38.67% { opacity: 1; }
+        38.7% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-55 { animation: pct55 4.5s ease-in-out infinite; }
+      @keyframes pct55 {
+        0% { opacity: 0; }
+        38.67% { opacity: 0; }
+        38.7% { opacity: 1; }
+        38.845% { opacity: 1; }
+        38.875% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-56 { animation: pct56 4.5s ease-in-out infinite; }
+      @keyframes pct56 {
+        0% { opacity: 0; }
+        38.845% { opacity: 0; }
+        38.875% { opacity: 1; }
+        39.02% { opacity: 1; }
+        39.05% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-57 { animation: pct57 4.5s ease-in-out infinite; }
+      @keyframes pct57 {
+        0% { opacity: 0; }
+        39.02% { opacity: 0; }
+        39.05% { opacity: 1; }
+        39.195% { opacity: 1; }
+        39.225% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-58 { animation: pct58 4.5s ease-in-out infinite; }
+      @keyframes pct58 {
+        0% { opacity: 0; }
+        39.195% { opacity: 0; }
+        39.225% { opacity: 1; }
+        39.37% { opacity: 1; }
+        39.4% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-59 { animation: pct59 4.5s ease-in-out infinite; }
+      @keyframes pct59 {
+        0% { opacity: 0; }
+        39.37% { opacity: 0; }
+        39.4% { opacity: 1; }
+        39.545% { opacity: 1; }
+        39.575% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-60 { animation: pct60 4.5s ease-in-out infinite; }
+      @keyframes pct60 {
+        0% { opacity: 0; }
+        39.545% { opacity: 0; }
+        39.575% { opacity: 1; }
+        39.72% { opacity: 1; }
+        39.75% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-61 { animation: pct61 4.5s ease-in-out infinite; }
+      @keyframes pct61 {
+        0% { opacity: 0; }
+        39.72% { opacity: 0; }
+        39.75% { opacity: 1; }
+        39.895% { opacity: 1; }
+        39.925% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-62 { animation: pct62 4.5s ease-in-out infinite; }
+      @keyframes pct62 {
+        0% { opacity: 0; }
+        39.895% { opacity: 0; }
+        39.925% { opacity: 1; }
+        40.07% { opacity: 1; }
+        40.1% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-63 { animation: pct63 4.5s ease-in-out infinite; }
+      @keyframes pct63 {
+        0% { opacity: 0; }
+        40.07% { opacity: 0; }
+        40.1% { opacity: 1; }
+        40.245% { opacity: 1; }
+        40.275% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-64 { animation: pct64 4.5s ease-in-out infinite; }
+      @keyframes pct64 {
+        0% { opacity: 0; }
+        40.245% { opacity: 0; }
+        40.275% { opacity: 1; }
+        40.42% { opacity: 1; }
+        40.45% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-65 { animation: pct65 4.5s ease-in-out infinite; }
+      @keyframes pct65 {
+        0% { opacity: 0; }
+        40.42% { opacity: 0; }
+        40.45% { opacity: 1; }
+        40.595% { opacity: 1; }
+        40.625% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-66 { animation: pct66 4.5s ease-in-out infinite; }
+      @keyframes pct66 {
+        0% { opacity: 0; }
+        40.595% { opacity: 0; }
+        40.625% { opacity: 1; }
+        40.77% { opacity: 1; }
+        40.8% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-67 { animation: pct67 4.5s ease-in-out infinite; }
+      @keyframes pct67 {
+        0% { opacity: 0; }
+        40.77% { opacity: 0; }
+        40.8% { opacity: 1; }
+        40.945% { opacity: 1; }
+        40.975% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-68 { animation: pct68 4.5s ease-in-out infinite; }
+      @keyframes pct68 {
+        0% { opacity: 0; }
+        40.945% { opacity: 0; }
+        40.975% { opacity: 1; }
+        41.12% { opacity: 1; }
+        41.15% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-69 { animation: pct69 4.5s ease-in-out infinite; }
+      @keyframes pct69 {
+        0% { opacity: 0; }
+        41.12% { opacity: 0; }
+        41.15% { opacity: 1; }
+        41.295% { opacity: 1; }
+        41.325% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-70 { animation: pct70 4.5s ease-in-out infinite; }
+      @keyframes pct70 {
+        0% { opacity: 0; }
+        41.295% { opacity: 0; }
+        41.325% { opacity: 1; }
+        41.47% { opacity: 1; }
+        41.5% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-71 { animation: pct71 4.5s ease-in-out infinite; }
+      @keyframes pct71 {
+        0% { opacity: 0; }
+        41.47% { opacity: 0; }
+        41.5% { opacity: 1; }
+        41.645% { opacity: 1; }
+        41.675% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-72 { animation: pct72 4.5s ease-in-out infinite; }
+      @keyframes pct72 {
+        0% { opacity: 0; }
+        41.645% { opacity: 0; }
+        41.675% { opacity: 1; }
+        41.82% { opacity: 1; }
+        41.85% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-73 { animation: pct73 4.5s ease-in-out infinite; }
+      @keyframes pct73 {
+        0% { opacity: 0; }
+        41.82% { opacity: 0; }
+        41.85% { opacity: 1; }
+        41.995% { opacity: 1; }
+        42.025% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-74 { animation: pct74 4.5s ease-in-out infinite; }
+      @keyframes pct74 {
+        0% { opacity: 0; }
+        41.995% { opacity: 0; }
+        42.025% { opacity: 1; }
+        42.17% { opacity: 1; }
+        42.2% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-75 { animation: pct75 4.5s ease-in-out infinite; }
+      @keyframes pct75 {
+        0% { opacity: 0; }
+        42.17% { opacity: 0; }
+        42.2% { opacity: 1; }
+        42.345% { opacity: 1; }
+        42.375% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-76 { animation: pct76 4.5s ease-in-out infinite; }
+      @keyframes pct76 {
+        0% { opacity: 0; }
+        42.345% { opacity: 0; }
+        42.375% { opacity: 1; }
+        42.52% { opacity: 1; }
+        42.55% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-77 { animation: pct77 4.5s ease-in-out infinite; }
+      @keyframes pct77 {
+        0% { opacity: 0; }
+        42.52% { opacity: 0; }
+        42.55% { opacity: 1; }
+        42.695% { opacity: 1; }
+        42.725% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-78 { animation: pct78 4.5s ease-in-out infinite; }
+      @keyframes pct78 {
+        0% { opacity: 0; }
+        42.695% { opacity: 0; }
+        42.725% { opacity: 1; }
+        42.87% { opacity: 1; }
+        42.9% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-79 { animation: pct79 4.5s ease-in-out infinite; }
+      @keyframes pct79 {
+        0% { opacity: 0; }
+        42.87% { opacity: 0; }
+        42.9% { opacity: 1; }
+        43.045% { opacity: 1; }
+        43.075% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-80 { animation: pct80 4.5s ease-in-out infinite; }
+      @keyframes pct80 {
+        0% { opacity: 0; }
+        43.045% { opacity: 0; }
+        43.075% { opacity: 1; }
+        43.22% { opacity: 1; }
+        43.25% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-81 { animation: pct81 4.5s ease-in-out infinite; }
+      @keyframes pct81 {
+        0% { opacity: 0; }
+        43.22% { opacity: 0; }
+        43.25% { opacity: 1; }
+        43.395% { opacity: 1; }
+        43.425% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-82 { animation: pct82 4.5s ease-in-out infinite; }
+      @keyframes pct82 {
+        0% { opacity: 0; }
+        43.395% { opacity: 0; }
+        43.425% { opacity: 1; }
+        43.57% { opacity: 1; }
+        43.6% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-83 { animation: pct83 4.5s ease-in-out infinite; }
+      @keyframes pct83 {
+        0% { opacity: 0; }
+        43.57% { opacity: 0; }
+        43.6% { opacity: 1; }
+        43.745% { opacity: 1; }
+        43.775% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-84 { animation: pct84 4.5s ease-in-out infinite; }
+      @keyframes pct84 {
+        0% { opacity: 0; }
+        43.745% { opacity: 0; }
+        43.775% { opacity: 1; }
+        43.92% { opacity: 1; }
+        43.95% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-85 { animation: pct85 4.5s ease-in-out infinite; }
+      @keyframes pct85 {
+        0% { opacity: 0; }
+        43.92% { opacity: 0; }
+        43.95% { opacity: 1; }
+        44.095% { opacity: 1; }
+        44.125% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-86 { animation: pct86 4.5s ease-in-out infinite; }
+      @keyframes pct86 {
+        0% { opacity: 0; }
+        44.095% { opacity: 0; }
+        44.125% { opacity: 1; }
+        44.27% { opacity: 1; }
+        44.3% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-87 { animation: pct87 4.5s ease-in-out infinite; }
+      @keyframes pct87 {
+        0% { opacity: 0; }
+        44.27% { opacity: 0; }
+        44.3% { opacity: 1; }
+        44.445% { opacity: 1; }
+        44.475% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-88 { animation: pct88 4.5s ease-in-out infinite; }
+      @keyframes pct88 {
+        0% { opacity: 0; }
+        44.445% { opacity: 0; }
+        44.475% { opacity: 1; }
+        44.62% { opacity: 1; }
+        44.65% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-89 { animation: pct89 4.5s ease-in-out infinite; }
+      @keyframes pct89 {
+        0% { opacity: 0; }
+        44.62% { opacity: 0; }
+        44.65% { opacity: 1; }
+        44.795% { opacity: 1; }
+        44.825% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-90 { animation: pct90 4.5s ease-in-out infinite; }
+      @keyframes pct90 {
+        0% { opacity: 0; }
+        44.795% { opacity: 0; }
+        44.825% { opacity: 1; }
+        44.97% { opacity: 1; }
+        45% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-91 { animation: pct91 4.5s ease-in-out infinite; }
+      @keyframes pct91 {
+        0% { opacity: 0; }
+        44.97% { opacity: 0; }
+        45% { opacity: 1; }
+        49.414% { opacity: 1; }
+        49.444% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-92 { animation: pct92 4.5s ease-in-out infinite; }
+      @keyframes pct92 {
+        0% { opacity: 0; }
+        49.414% { opacity: 0; }
+        49.444% { opacity: 1; }
+        53.859% { opacity: 1; }
+        53.889% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-93 { animation: pct93 4.5s ease-in-out infinite; }
+      @keyframes pct93 {
+        0% { opacity: 0; }
+        53.859% { opacity: 0; }
+        53.889% { opacity: 1; }
+        58.303% { opacity: 1; }
+        58.333% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-94 { animation: pct94 4.5s ease-in-out infinite; }
+      @keyframes pct94 {
+        0% { opacity: 0; }
+        58.303% { opacity: 0; }
+        58.333% { opacity: 1; }
+        62.748% { opacity: 1; }
+        62.778% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-95 { animation: pct95 4.5s ease-in-out infinite; }
+      @keyframes pct95 {
+        0% { opacity: 0; }
+        62.748% { opacity: 0; }
+        62.778% { opacity: 1; }
+        67.192% { opacity: 1; }
+        67.222% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-96 { animation: pct96 4.5s ease-in-out infinite; }
+      @keyframes pct96 {
+        0% { opacity: 0; }
+        67.192% { opacity: 0; }
+        67.222% { opacity: 1; }
+        71.637% { opacity: 1; }
+        71.667% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-97 { animation: pct97 4.5s ease-in-out infinite; }
+      @keyframes pct97 {
+        0% { opacity: 0; }
+        71.637% { opacity: 0; }
+        71.667% { opacity: 1; }
+        76.081% { opacity: 1; }
+        76.111% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-98 { animation: pct98 4.5s ease-in-out infinite; }
+      @keyframes pct98 {
+        0% { opacity: 0; }
+        76.081% { opacity: 0; }
+        76.111% { opacity: 1; }
+        80.526% { opacity: 1; }
+        80.556% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-99 { animation: pct99 4.5s ease-in-out infinite; }
+      @keyframes pct99 {
+        0% { opacity: 0; }
+        80.526% { opacity: 0; }
+        80.556% { opacity: 1; }
+        96.97% { opacity: 1; }
+        97% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .pct-100 { animation: pct100 4.5s ease-in-out infinite; }
+      @keyframes pct100 {
+        0% { opacity: 0; }
+        96.97% { opacity: 0; }
+        97% { opacity: 1; }
+        100% { opacity: 1; }
+      }
+
+      .avatar-ring {
+        fill: none;
+        stroke: url(#avatarGrad);
+        stroke-width: 3;
+        animation: spin 3s linear infinite;
+        transform-origin: 60px 75px;
+      }
+      @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="150" rx="10"/>
+  <rect class="frame" x="1" y="1" width="898" height="148" rx="10"/>
+
+  <image
+    x="26" y="41" width="68" height="68"
+    clip-path="url(#avatarClip)"
+    href="data:image/png;base64,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"
+  />
+  <circle class="avatar-ring" cx="60" cy="75" r="38" stroke-dasharray="180 60"/>
+
+  <text x="120" y="55" class="title">LMalakar<tspan class="accent">.</tspan><tspan class="cursor">_</tspan></text>
+  <text x="120" y="78" class="sub">building games &amp; web apps · open to collab</text>
+
+  <rect class="bar-bg" x="120" y="98" width="480" height="14" rx="3"/>
+  <rect class="bar-fill" x="120" y="98" height="14" rx="3"/>
+
+  <g transform="translate(650,110)">
+    <text class="pct pct-0" text-anchor="middle">0%</text>
+    <text class="pct pct-1" text-anchor="middle">1%</text>
+    <text class="pct pct-2" text-anchor="middle">2%</text>
+    <text class="pct pct-3" text-anchor="middle">3%</text>
+    <text class="pct pct-4" text-anchor="middle">4%</text>
+    <text class="pct pct-5" text-anchor="middle">5%</text>
+    <text class="pct pct-6" text-anchor="middle">6%</text>
+    <text class="pct pct-7" text-anchor="middle">7%</text>
+    <text class="pct pct-8" text-anchor="middle">8%</text>
+    <text class="pct pct-9" text-anchor="middle">9%</text>
+    <text class="pct pct-10" text-anchor="middle">10%</text>
+    <text class="pct pct-11" text-anchor="middle">11%</text>
+    <text class="pct pct-12" text-anchor="middle">12%</text>
+    <text class="pct pct-13" text-anchor="middle">13%</text>
+    <text class="pct pct-14" text-anchor="middle">14%</text>
+    <text class="pct pct-15" text-anchor="middle">15%</text>
+    <text class="pct pct-16" text-anchor="middle">16%</text>
+    <text class="pct pct-17" text-anchor="middle">17%</text>
+    <text class="pct pct-18" text-anchor="middle">18%</text>
+    <text class="pct pct-19" text-anchor="middle">19%</text>
+    <text class="pct pct-20" text-anchor="middle">20%</text>
+    <text class="pct pct-21" text-anchor="middle">21%</text>
+    <text class="pct pct-22" text-anchor="middle">22%</text>
+    <text class="pct pct-23" text-anchor="middle">23%</text>
+    <text class="pct pct-24" text-anchor="middle">24%</text>
+    <text class="pct pct-25" text-anchor="middle">25%</text>
+    <text class="pct pct-26" text-anchor="middle">26%</text>
+    <text class="pct pct-27" text-anchor="middle">27%</text>
+    <text class="pct pct-28" text-anchor="middle">28%</text>
+    <text class="pct pct-29" text-anchor="middle">29%</text>
+    <text class="pct pct-30" text-anchor="middle">30%</text>
+    <text class="pct pct-31" text-anchor="middle">31%</text>
+    <text class="pct pct-32" text-anchor="middle">32%</text>
+    <text class="pct pct-33" text-anchor="middle">33%</text>
+    <text class="pct pct-34" text-anchor="middle">34%</text>
+    <text class="pct pct-35" text-anchor="middle">35%</text>
+    <text class="pct pct-36" text-anchor="middle">36%</text>
+    <text class="pct pct-37" text-anchor="middle">37%</text>
+    <text class="pct pct-38" text-anchor="middle">38%</text>
+    <text class="pct pct-39" text-anchor="middle">39%</text>
+    <text class="pct pct-40" text-anchor="middle">40%</text>
+    <text class="pct pct-41" text-anchor="middle">41%</text>
+    <text class="pct pct-42" text-anchor="middle">42%</text>
+    <text class="pct pct-43" text-anchor="middle">43%</text>
+    <text class="pct pct-44" text-anchor="middle">44%</text>
+    <text class="pct pct-45" text-anchor="middle">45%</text>
+    <text class="pct pct-46" text-anchor="middle">46%</text>
+    <text class="pct pct-47" text-anchor="middle">47%</text>
+    <text class="pct pct-48" text-anchor="middle">48%</text>
+    <text class="pct pct-49" text-anchor="middle">49%</text>
+    <text class="pct pct-50" text-anchor="middle">50%</text>
+    <text class="pct pct-51" text-anchor="middle">51%</text>
+    <text class="pct pct-52" text-anchor="middle">52%</text>
+    <text class="pct pct-53" text-anchor="middle">53%</text>
+    <text class="pct pct-54" text-anchor="middle">54%</text>
+    <text class="pct pct-55" text-anchor="middle">55%</text>
+    <text class="pct pct-56" text-anchor="middle">56%</text>
+    <text class="pct pct-57" text-anchor="middle">57%</text>
+    <text class="pct pct-58" text-anchor="middle">58%</text>
+    <text class="pct pct-59" text-anchor="middle">59%</text>
+    <text class="pct pct-60" text-anchor="middle">60%</text>
+    <text class="pct pct-61" text-anchor="middle">61%</text>
+    <text class="pct pct-62" text-anchor="middle">62%</text>
+    <text class="pct pct-63" text-anchor="middle">63%</text>
+    <text class="pct pct-64" text-anchor="middle">64%</text>
+    <text class="pct pct-65" text-anchor="middle">65%</text>
+    <text class="pct pct-66" text-anchor="middle">66%</text>
+    <text class="pct pct-67" text-anchor="middle">67%</text>
+    <text class="pct pct-68" text-anchor="middle">68%</text>
+    <text class="pct pct-69" text-anchor="middle">69%</text>
+    <text class="pct pct-70" text-anchor="middle">70%</text>
+    <text class="pct pct-71" text-anchor="middle">71%</text>
+    <text class="pct pct-72" text-anchor="middle">72%</text>
+    <text class="pct pct-73" text-anchor="middle">73%</text>
+    <text class="pct pct-74" text-anchor="middle">74%</text>
+    <text class="pct pct-75" text-anchor="middle">75%</text>
+    <text class="pct pct-76" text-anchor="middle">76%</text>
+    <text class="pct pct-77" text-anchor="middle">77%</text>
+    <text class="pct pct-78" text-anchor="middle">78%</text>
+    <text class="pct pct-79" text-anchor="middle">79%</text>
+    <text class="pct pct-80" text-anchor="middle">80%</text>
+    <text class="pct pct-81" text-anchor="middle">81%</text>
+    <text class="pct pct-82" text-anchor="middle">82%</text>
+    <text class="pct pct-83" text-anchor="middle">83%</text>
+    <text class="pct pct-84" text-anchor="middle">84%</text>
+    <text class="pct pct-85" text-anchor="middle">85%</text>
+    <text class="pct pct-86" text-anchor="middle">86%</text>
+    <text class="pct pct-87" text-anchor="middle">87%</text>
+    <text class="pct pct-88" text-anchor="middle">88%</text>
+    <text class="pct pct-89" text-anchor="middle">89%</text>
+    <text class="pct pct-90" text-anchor="middle">90%</text>
+    <text class="pct pct-91" text-anchor="middle">91%</text>
+    <text class="pct pct-92" text-anchor="middle">92%</text>
+    <text class="pct pct-93" text-anchor="middle">93%</text>
+    <text class="pct pct-94" text-anchor="middle">94%</text>
+    <text class="pct pct-95" text-anchor="middle">95%</text>
+    <text class="pct pct-96" text-anchor="middle">96%</text>
+    <text class="pct pct-97" text-anchor="middle">97%</text>
+    <text class="pct pct-98" text-anchor="middle">98%</text>
+    <text class="pct pct-99" text-anchor="middle">99%</text>
+    <text class="pct pct-100" text-anchor="middle">100%</text>
+  </g>
+
+    <text x="120" y="128" class="sub pct-0">0 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-1">7 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-2">15 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-3">22 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-4">30 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-5">37 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-6">44 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-7">52 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-8">59 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-9">67 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-10">74 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-11">81 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-12">89 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-13">96 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-14">103 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-15">111 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-16">118 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-17">126 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-18">133 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-19">140 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-20">148 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-21">155 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-22">163 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-23">170 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-24">177 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-25">185 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-26">192 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-27">200 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-28">207 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-29">214 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-30">222 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-31">229 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-32">236 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-33">244 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-34">251 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-35">259 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-36">266 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-37">273 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-38">281 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-39">288 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-40">296 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-41">303 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-42">310 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-43">318 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-44">325 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-45">333 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-46">340 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-47">347 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-48">355 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-49">362 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-50">370 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-51">377 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-52">384 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-53">392 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-54">399 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-55">406 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-56">414 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-57">421 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-58">429 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-59">436 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-60">443 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-61">451 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-62">458 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-63">466 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-64">473 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-65">480 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-66">488 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-67">495 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-68">503 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-69">510 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-70">517 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-71">525 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-72">532 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-73">539 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-74">547 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-75">554 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-76">562 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-77">569 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-78">576 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-79">584 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-80">591 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-81">599 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-82">606 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-83">613 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-84">621 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-85">628 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-86">636 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-87">643 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-88">650 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-89">658 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-90">665 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-91">672 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-92">680 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-93">687 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-94">695 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-95">702 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-96">709 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-97">717 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-98">724 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-99">732 contributions &#183; Anime-Streem, LLOF and more...</text>
+  <text x="120" y="128" class="sub pct-100">739 contributions &#183; Anime-Streem, LLOF and more...</text>
+</svg>
