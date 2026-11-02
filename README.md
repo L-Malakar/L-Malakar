@@ -6,7 +6,7 @@
 
 <br>
 
-# LMalakar
+# L-Malakar
 
 **Builder. Game maker. Always chasing the next idea worth shipping.**
 
