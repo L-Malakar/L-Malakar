@@ -23,7 +23,7 @@
 <a href="https://instagram.com/devxmalakar/" target="_blank" rel="noopener noreferrer">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="42" height="32" alt="instagram" />
 </a>
-<a href="mailto:lemystore.help@gmail.com">
+<a href="lemystore.help@gmail.com">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="42" height="32" alt="gmail" />
 </a>
 <a href="https://codepen.io/L-Malakar">
